@@ -14,5 +14,9 @@ public class NewsService {
         this.newsRepository = newsRepository;
     }
 
+    public void saveNews(News news){
+        newsRepository.save(news);
+        System.out.println("HHHHHHHHHH save HHHHHHHHHHH");
+    }
 
 }
