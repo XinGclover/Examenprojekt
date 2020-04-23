@@ -21,11 +21,7 @@ public class News implements Serializable {
     @NonNull
     private String url;
 
-    @NotNull
-    @NonNull
     private String title;
-
-    private String image;
 
     @NotNull
     @NonNull
@@ -37,8 +33,9 @@ public class News implements Serializable {
     @NonNull
     private String source;
 
-    @NotNull
-    @NonNull
+    @Lob
+    @Basic(fetch=FetchType.LAZY)
+    @Column(columnDefinition="TEXT",nullable=true)
     private String content;
 
 }
