@@ -22,7 +22,7 @@ import java.util.Date;
 import java.util.HashSet;
 
 @Component
-public class BasicCrawlerUtil {
+public class SVTCrawlerUtil {
     @Autowired
     private NewsService newsService;
 
@@ -102,18 +102,25 @@ public class BasicCrawlerUtil {
             try{
                 newsHtml= getHtmlFromUrl(url);
                 Element newsContent = newsHtml.select("article").first();
-                String title =null;
-                if(newsContent.select("h1.nyh_article__heading")!=null){
-                    title= newsContent.select("h1.nyh_article__heading").text();
+                if(newsContent!=null) {
+                    Element titleElement = newsContent.select("h1.nyh_article__heading").first();
+                    String title = null;
+                    if (titleElement != null) {
+                        title = titleElement.text();
+                    } else {
+                        System.out.println("No News Title!");
+                    }
+                    String content = newsContent.select("div.nyh_article__main").select("p").text();
+                    news.setUrl(url);
+                    news.setTitle(title);
+                    news.setContent(content);
+                    news.setSource("SVT");
+                    news.setCreateDate(new Date());
+                    newsService.saveNews(news);
                 }
-                String content = newsContent.select("div.nyh_article__main").select("p").text();
-                news.setUrl(url);
-                news.setTitle(title);
-                news.setContent(content);
-                news.setSource("SVT");
-                news.setCreateDate(new Date());
-                newsService.saveNews(news);
-
+                else {
+                    System.out.println("There is no article!");
+                }
             }catch (Exception e){
                 e.printStackTrace();
             }

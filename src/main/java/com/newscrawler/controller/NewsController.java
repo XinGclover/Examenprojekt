@@ -1,6 +1,6 @@
 package com.newscrawler.controller;
 
-import com.newscrawler.util.BasicCrawlerUtil;
+import com.newscrawler.util.SVTCrawlerUtil;
 import com.newscrawler.service.NewsService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -13,19 +13,19 @@ import java.net.MalformedURLException;
 @RequestMapping("/news")
 @Api(value = "newscrawlerapi")
 public class NewsController {
-    private BasicCrawlerUtil basicCrawler;
+    private SVTCrawlerUtil svtCrawler;
     private NewsService newsService;
 
     @Autowired
-    public NewsController(BasicCrawlerUtil basicCrawler, NewsService newsService) {
-        this.basicCrawler = basicCrawler;
+    public NewsController(SVTCrawlerUtil basicCrawler, NewsService newsService) {
+        this.svtCrawler = basicCrawler;
         this.newsService = newsService;
     }
 
     @ApiOperation(value = "Scape News from SVT")
     @GetMapping("/svt")
     public void pullSVTNews() throws MalformedURLException {
-        basicCrawler.pullNews();
+        svtCrawler.pullNews();
     }
 
 
