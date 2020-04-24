@@ -27,7 +27,7 @@ public class News implements Serializable {
     @NonNull
     private Date createDate;
 
-    private Date newsDate;
+    private String newsDate;
 
     @NotNull
     @NonNull
