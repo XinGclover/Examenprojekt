@@ -5,6 +5,10 @@ import com.newscrawler.repository.NewsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
 @Service
 public class NewsService {
     private final NewsRepository newsRepository;
@@ -16,7 +20,25 @@ public class NewsService {
 
     public void saveNews(News news){
         newsRepository.save(news);
-        System.out.println("HHHHHHHHHH save HHHHHHHHHHH");
     }
+
+    public List<News> findAll() {
+        Iterable<News> newsIterable =  newsRepository.findAll();
+        List<News> newsList = new ArrayList<>();
+        for (News news : newsIterable) {
+            newsList.add(news);
+        }
+        return newsList;
+    }
+
+    public News findNewsById(Long id) {
+        Optional<News> optionalNews = newsRepository.findById(id);
+        if (optionalNews.isPresent()) {
+            News news = optionalNews.get();
+            return news;
+        }
+        return null;
+    }
+
 
 }
