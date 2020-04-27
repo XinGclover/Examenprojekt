@@ -1,14 +1,29 @@
 package com.newscrawler.util.Analysis;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import com.newscrawler.entity.Keyword;
+import com.newscrawler.entity.News;
+import com.newscrawler.service.KeywordService;
+import org.springframework.stereotype.Component;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
+@Component
 public class TfidfCalculation {
+    private final KeywordGenerator keywordGenerator;
+    private final KeywordService keywordService;
+
+
     //存放（单词，单词数量）
-    HashMap<String, Integer> dict = new HashMap<String, Integer>();
+    private HashMap<String, Integer> dict = new HashMap<String, Integer>();
     //存放（单词，单词词频）
-    HashMap<String, Float> tf = new HashMap<String, Float>();
+    private HashMap<String, Float> tf = new HashMap<String, Float>();
+
+    public TfidfCalculation(KeywordGenerator keywordGenerator, KeywordService keywordService) {
+        this.keywordGenerator = keywordGenerator;
+        this.keywordService = keywordService;
+    }
+
     public HashMap<String,Float> calculateTermFrequency(Set<String> keywordsSet){
         int wordCount=0;
 
@@ -26,18 +41,19 @@ public class TfidfCalculation {
             }
         }
         for(Map.Entry<String, Integer> entry:dict.entrySet()){
-            float wordTf=(float)entry.getValue()/wordCount;
+//            float wordTf=(float)entry.getValue()/wordCount;
+            float wordTf= (float)wordCount;
             tf.put(entry.getKey(), wordTf);
         }
         return tf;
     }
 
 
-    public Map<String,Float> calculateInverseDocFrequency(int D, Map<Long,Set<String>> news_keywords,Map<String,Float> tf){
-        HashMap<String,Float> tfidf=new HashMap<String, Float>();
+    public HashMap<String,Float> calculateInverseDocFrequency(int D, Map<News,Set<String>> newsKeywordsMap,Map<String,Float> tf){
+        HashMap<String,Float> tfidf=new HashMap<>();
         for(String key:tf.keySet()){
             int Dt=0;
-            for(Map.Entry<Long, Set<String>> entry:news_keywords.entrySet()){
+            for(Map.Entry<News, Set<String>> entry : newsKeywordsMap.entrySet()){
                 Set<String > keywords= entry.getValue();
                 if(keywords.contains(key)){
                     Dt++;
@@ -50,8 +66,41 @@ public class TfidfCalculation {
         return tfidf;
     }
 
-    public Map<String,Float> sortFirstFiveKeywords(){
-        
+    public HashMap<String,Float> sortMap(Map<String,Float> keywordmap){
+        HashMap<String,Float> sortedTFIDF= keywordmap.entrySet().stream()
+                .sorted(Map.Entry
+                .comparingByValue())
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (oldValue,newValue)-> oldValue, LinkedHashMap::new));
+        return sortedTFIDF;
+    }
+
+    public TreeMap<String,Float> getTopFiveKeywords(Map<String,Float> tfidfmap){
+        TreeMap<String,Float> topFive= tfidfmap.entrySet().stream().limit(5)
+                .collect(TreeMap::new,(m,e)->m.put(e.getKey(),e.getValue()),Map::putAll);
+        return topFive;
+    }
+
+    public void saveTopFiveKeywords(){
+        Map<News,Set<String>> newsKeywordsMap= keywordGenerator.generateKeywordsMap();
+        for(Map.Entry<News,Set<String>> entry : newsKeywordsMap.entrySet()){
+            HashMap<String,Float> tfmap= calculateTermFrequency(entry.getValue());
+            HashMap<String,Float> tfidfmap= calculateInverseDocFrequency(newsKeywordsMap.size(),
+                    newsKeywordsMap,
+                    tfmap);
+            TreeMap<String,Float> topFive= getTopFiveKeywords(sortMap(tfmap));
+            for(Map.Entry<String, Float> keywordEntry:topFive.entrySet()){
+                System.out.println(keywordEntry.getKey()+"  "+keywordEntry.getValue());
+                Keyword keyword = new Keyword();
+                    keyword.setNews(entry.getKey());
+                    keyword.setTerm(keywordEntry.getKey());
+                    keyword.setTfidf(keywordEntry.getValue());
+                    keywordService.saveKeyword(keyword);
+            }
+        }
+
     }
 
 }

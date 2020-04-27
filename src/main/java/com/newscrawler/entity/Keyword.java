@@ -24,5 +24,5 @@ public class Keyword {
     @NonNull
     private String term;
 
-    private int count;
+    private float tfidf;
 }

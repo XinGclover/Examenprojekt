@@ -1,6 +1,7 @@
 package com.newscrawler.controller;
 
 import com.newscrawler.util.Analysis.KeywordGenerator;
+import com.newscrawler.util.Analysis.TfidfCalculation;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,15 +16,18 @@ import java.net.MalformedURLException;
 @Api(value = "keyword")
 public class KeywordController {
     private KeywordGenerator keywordGenerator;
+    private TfidfCalculation tfidfCalculation;
 
-    @Autowired
-    public KeywordController(KeywordGenerator keywordGenerator){
-        this.keywordGenerator= keywordGenerator;
+@Autowired
+    public KeywordController(KeywordGenerator keywordGenerator, TfidfCalculation tfidfCalculation) {
+        this.keywordGenerator = keywordGenerator;
+        this.tfidfCalculation = tfidfCalculation;
     }
 
-    @ApiOperation(value = "Generate Key Words of news")
-    @GetMapping("/keywords")
-    public void generateNewsKeywords() {
-        keywordGenerator.generateKeywords();
+    @ApiOperation(value = "Get Top-5 Keywords from News")
+    @GetMapping("/topfive")
+    public void getTopFiveKeywords() {
+        tfidfCalculation.saveTopFiveKeywords();
+//        keywordGenerator.generateKeywordsMap();
     }
 }

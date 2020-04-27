@@ -13,6 +13,8 @@ import org.springframework.stereotype.Component;
 import org.tartarus.snowball.ext.PorterStemmer;
 import java.io.StringReader;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static org.apache.lucene.analysis.en.EnglishAnalyzer.ENGLISH_STOP_WORDS_SET;
 
@@ -41,9 +43,11 @@ public class KeywordGenerator {
             stream.reset();
             while(stream.incrementToken()) {
                 String kw = stream.getAttribute(CharTermAttribute.class).toString();
-                stemmer.setCurrent(kw);
-                stemmer.stem();
-                keywords.add(stemmer.getCurrent());
+                if(!isDigit(kw)){
+                    stemmer.setCurrent(kw);
+                    stemmer.stem();
+                    keywords.add(stemmer.getCurrent());
+                }
             }
         }catch(Exception ex) {
             LOGGER.error(ex.getMessage());
@@ -57,6 +61,18 @@ public class KeywordGenerator {
             }
         }
         return keywords;
+    }
+
+    public  boolean isDigit(String input) {
+        String regex = "(.)*(\\d)(.)*";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(input);
+
+        boolean isMatched = matcher.matches();
+        if (isMatched) {
+            return true;
+        }
+        return false;
     }
 
 //    public void generateKeywords(){
@@ -77,13 +93,14 @@ public class KeywordGenerator {
 //        }
 //    }
 
-    public Map<Long,Set<String>> generateKeywordsMap(){
+    public Map<News,Set<String>> generateKeywordsMap(){
         List<News> newsList= newsService.findAll();
-        Map<Long,Set<String>> newsKeywordsMap= new HashMap<>();
+        Map<News,Set<String>> newsKeywordsMap= new HashMap<>();
         if(!newsList.isEmpty()) {
             for (News news : newsList) {
-                Set<String> terms = generateKeyWords(news.getTitle());
-                newsKeywordsMap.put(news.getId(),terms);
+                Set<String> terms = generateKeyWords(news.getContent());
+                newsKeywordsMap.put(news,terms);
+//                System.out.println(news.getId()+" "+terms.size());
             }
         }
         else {
