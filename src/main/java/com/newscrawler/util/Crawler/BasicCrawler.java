@@ -1,4 +1,4 @@
-package com.newscrawler.util;
+package com.newscrawler.util.Crawler;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHeaders;
@@ -38,7 +38,6 @@ public interface BasicCrawler {
         try {
             response = httpclient.execute(request);
             int status = response.getStatusLine().getStatusCode();
-            System.out.println("======Status ======="+status);
             if (status >= 200 && status < 300){
                 HttpEntity entity = response.getEntity();
                 if (entity != null) {

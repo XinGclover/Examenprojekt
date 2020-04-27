@@ -1,4 +1,4 @@
-package com.newscrawler.util;
+package com.newscrawler.util.Crawler;
 import com.newscrawler.entity.News;
 import com.newscrawler.service.NewsService;
 import org.jsoup.nodes.Document;
