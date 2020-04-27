@@ -59,7 +59,7 @@ public class TfidfCalculation {
                     Dt++;
                 }
             }
-            float idfvalue=(float) Math.log(Float.valueOf(D)/Dt);
+            float idfvalue=(float) Math.log(Float.valueOf(D)/Dt+1);
             tfidf.put(key, idfvalue * tf.get(key));
 
         }
@@ -78,7 +78,7 @@ public class TfidfCalculation {
     }
 
     public TreeMap<String,Float> getTopFiveKeywords(Map<String,Float> tfidfmap){
-        TreeMap<String,Float> topFive= tfidfmap.entrySet().stream().limit(5)
+        TreeMap<String,Float> topFive= tfidfmap.entrySet().stream().limit(10)
                 .collect(TreeMap::new,(m,e)->m.put(e.getKey(),e.getValue()),Map::putAll);
         return topFive;
     }
