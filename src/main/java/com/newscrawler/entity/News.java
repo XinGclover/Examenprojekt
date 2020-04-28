@@ -3,8 +3,11 @@ package com.newscrawler.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
 
 @Entity
@@ -37,5 +40,9 @@ public class News implements Serializable {
     @Basic(fetch=FetchType.LAZY)
     @Column(columnDefinition="TEXT",nullable=true)
     private String content;
+
+    @OneToMany(mappedBy = "news" , cascade = CascadeType.PERSIST,fetch = FetchType.EAGER)
+    @ToString.Exclude
+    private List<Keyword> keywords;
 
 }

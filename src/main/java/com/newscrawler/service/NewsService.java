@@ -22,7 +22,7 @@ public class NewsService {
         newsRepository.save(news);
     }
 
-    public List<News> findAll() {
+    public List<News> findAllNews() {
         Iterable<News> newsIterable =  newsRepository.findAll();
         List<News> newsList = new ArrayList<>();
         for (News news : newsIterable) {
@@ -33,8 +33,9 @@ public class NewsService {
 
     public News findNewsById(Long id) {
         Optional<News> optionalNews = newsRepository.findById(id);
+        News news= null;
         if (optionalNews.isPresent()) {
-            News news = optionalNews.get();
+            news = optionalNews.get();
             return news;
         }
         return null;

@@ -1,5 +1,6 @@
 package com.newscrawler.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -16,8 +17,7 @@ public class Keyword {
     private long id;
 
     @ManyToOne
-    @NotNull
-    @NonNull
+    @JsonIgnore
     private News news;
 
     @NotNull

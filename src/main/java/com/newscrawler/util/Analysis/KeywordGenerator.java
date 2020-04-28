@@ -94,19 +94,25 @@ public class KeywordGenerator {
 //    }
 
     public Map<News,Set<String>> generateKeywordsMap(){
-        List<News> newsList= newsService.findAll();
+        List<News> newsList= newsService.findAllNews();
+        System.out.println("newsList0000000 "+newsList.size());
         Map<News,Set<String>> newsKeywordsMap= new HashMap<>();
         if(!newsList.isEmpty()) {
             for (News news : newsList) {
                 Set<String> terms = generateKeyWords(news.getContent());
                 newsKeywordsMap.put(news,terms);
-//                System.out.println(news.getId()+" "+terms.size());
+                System.out.println(news.getId()+" "+terms.size());
             }
         }
         else {
             LOGGER.error("No news in Database!");
         }
         return newsKeywordsMap;
+    }
+
+    public List<News> getallNews(){
+        List<News> newsList= newsService.findAllNews();
+        return newsList;
     }
 
 }
