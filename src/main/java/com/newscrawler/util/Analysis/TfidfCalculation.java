@@ -86,19 +86,22 @@ public class TfidfCalculation {
     public void saveTopFiveKeywords(){
         Map<News,Set<String>> newsKeywordsMap= keywordGenerator.generateKeywordsMap();
         for(Map.Entry<News,Set<String>> entry : newsKeywordsMap.entrySet()){
+            News news= entry.getKey();
             HashMap<String,Float> tfmap= calculateTermFrequency(entry.getValue());
             HashMap<String,Float> tfidfmap= calculateInverseDocFrequency(newsKeywordsMap.size(),
                     newsKeywordsMap,
                     tfmap);
             TreeMap<String,Float> topFive= getTopFiveKeywords(sortMap(tfmap));
+            List<Keyword> keywordList= new ArrayList<>();
             for(Map.Entry<String, Float> keywordEntry:topFive.entrySet()){
-                System.out.println(keywordEntry.getKey()+"  "+keywordEntry.getValue());
                 Keyword keyword = new Keyword();
-                    keyword.setNews(entry.getKey());
+                    keyword.setNews(news);
                     keyword.setTerm(keywordEntry.getKey());
                     keyword.setTfidf(keywordEntry.getValue());
                     keywordService.saveKeyword(keyword);
+                    keywordList.add(keyword);
             }
+            news.setKeywords(keywordList);
         }
 
     }
