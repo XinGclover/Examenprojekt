@@ -38,24 +38,41 @@
                 function drawChart(result) {
                     var data = new google.visualization.DataTable();
                     data.addColumn('string', 'Term');
-                    data.addColumn('number', 'TF-IDF');
+                    data.addColumn('number', 'Term Frequency');
                     var dataArray = [];
                     $.each(result, function(i, obj) {
-                        dataArray.push([ obj.term, obj.tfidf ]);
+                        dataArray.push([ obj.stem, obj.frequency ]);
                     });
 
                     data.addRows(dataArray);
 
-                    var piechart_options = {
-                        title : 'Pie Chart: key Words in this News',
-                        width : 500,
-                        height : 400
-                    };
-                    var piechart = new google.visualization.PieChart(document
-                        .getElementById('piechart_div'));
-                    piechart.draw(data, piechart_options);
+                    // var piechart_options = {
+                    //     title : 'Pie Chart: key Words in this News',
+                    //     width : 500,
+                    //     height : 400
+                    // };
+                    // var piechart = new google.visualization.PieChart(document
+                    //     .getElementById('piechart_div'));
+                    // piechart.draw(data, piechart_options);
 
+                    var barchart_options = {
+                        title : 'Barchart: Top-10 Keywords in this News',
+                        width : 600,
+                        height : 400,
+                        legend : 'none',
+                        hAxis: {
+                            title: 'Term Frequency',
+                            minValue: 0
+                        },
+                        vAxis: {
+                            title: 'Term'
+                        }
+                    };
+                    var barchart = new google.visualization.BarChart(document
+                        .getElementById('barchart_div'));
+                    barchart.draw(data, barchart_options);
                 }
+
 
                 function getNewsTitle() {
                     $(document).ready(function() {
@@ -87,8 +104,8 @@
 <h1 id="newsTitle"></h1>
 <table class="columns">
     <tr>
-        <td><div id="piechart_div" style="border: 1px solid #ccc"></div></td>
-<%--        <td><div id="barchart_div" style="border: 1px solid #ccc"></div></td>--%>
+<%--        <td><div id="piechart_div" style="border: 1px solid #ccc"></div></td>--%>
+        <td><div id="barchart_div" style="border: 1px solid #ccc"></div></td>
     </tr>
 </table>
 
