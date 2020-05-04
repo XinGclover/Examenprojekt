@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 public class TfidfCalculation {
     private final KeywordGenerator keywordGenerator;
     private final KeywordService keywordService;
+    private final KeywordsExtractor keywordsExtractor;
 
 
     //存放（单词，单词数量）
@@ -19,9 +20,10 @@ public class TfidfCalculation {
     //存放（单词，单词词频）
     private HashMap<String, Float> tf = new HashMap<String, Float>();
 
-    public TfidfCalculation(KeywordGenerator keywordGenerator, KeywordService keywordService) {
+    public TfidfCalculation(KeywordGenerator keywordGenerator, KeywordService keywordService, KeywordsExtractor keywordsExtractor) {
         this.keywordGenerator = keywordGenerator;
         this.keywordService = keywordService;
+        this.keywordsExtractor = keywordsExtractor;
     }
 
     public HashMap<String,Float> calculateTermFrequency(Set<String> keywordsSet){
@@ -95,11 +97,12 @@ public class TfidfCalculation {
             List<Keyword> keywordList= new ArrayList<>();
             for(Map.Entry<String, Float> keywordEntry:topFive.entrySet()){
                 Keyword keyword = new Keyword();
-                    keyword.setNews(news);
-                    keyword.setTerm(keywordEntry.getKey());
-                    keyword.setTfidf(keywordEntry.getValue());
-                    keywordService.saveKeyword(keyword);
-                    keywordList.add(keyword);
+//                    keyword.setNews(news);
+                    keyword.setStem(keywordEntry.getKey());
+//                    keyword.setTfidf(keywordEntry.getValue());
+//                    keywordService.saveKeyword(keyword);
+//                    keywordList.add(keyword);
+                System.out.println(keyword.getStem()+" "+keyword.getFrequency());
             }
             news.setKeywords(keywordList);
         }
