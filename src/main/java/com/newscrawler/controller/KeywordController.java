@@ -2,9 +2,7 @@ package com.newscrawler.controller;
 
 import com.newscrawler.entity.Keyword;
 import com.newscrawler.service.KeywordService;
-import com.newscrawler.util.Analysis.KeywordGenerator;
 import com.newscrawler.util.Analysis.KeywordsExtractor;
-import com.newscrawler.util.Analysis.TfidfCalculation;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
@@ -22,16 +20,12 @@ import java.util.List;
 @RequestMapping("/keyword")
 @Api(value = "keyword")
 public class KeywordController {
-    private static final Logger LOGGER = LoggerFactory.getLogger(KeywordGenerator.class);
-    private KeywordGenerator keywordGenerator;
-    private TfidfCalculation tfidfCalculation;
+    private static final Logger LOGGER = LoggerFactory.getLogger(KeywordController.class);
     private KeywordService keywordService;
     private KeywordsExtractor keywordsExtractor;
 
 @Autowired
-    public KeywordController(KeywordGenerator keywordGenerator, TfidfCalculation tfidfCalculation, KeywordService keywordService, KeywordsExtractor keywordsExtractor) {
-        this.keywordGenerator = keywordGenerator;
-        this.tfidfCalculation = tfidfCalculation;
+    public KeywordController( KeywordService keywordService, KeywordsExtractor keywordsExtractor) {
         this.keywordService = keywordService;
     this.keywordsExtractor = keywordsExtractor;
 }
@@ -39,8 +33,6 @@ public class KeywordController {
     @ApiOperation(value = "Get Top-10 Keywords from News")
     @GetMapping("/topten")
     public void getTopFiveKeywords() throws IOException {
-//        tfidfCalculation.saveTopFiveKeywords();
-//        keywordGenerator.generateKeywordsMap();
         keywordsExtractor.saveTopTenKeywords();
     }
 

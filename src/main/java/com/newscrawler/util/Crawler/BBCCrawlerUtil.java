@@ -2,9 +2,12 @@ package com.newscrawler.util.Crawler;
 
 import com.newscrawler.entity.News;
 import com.newscrawler.service.NewsService;
+import com.newscrawler.util.Analysis.KeywordsExtractor;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -22,6 +25,7 @@ public class BBCCrawlerUtil implements BasicCrawler{
     @Autowired
     private NewsService newsService;
     private String baseUrl= "https://www.bbc.com/news";
+    private static final Logger LOGGER = LoggerFactory.getLogger(BBCCrawlerUtil.class);
 
     //fetch and parse a HTML document from the web
     @Override
@@ -59,7 +63,6 @@ public class BBCCrawlerUtil implements BasicCrawler{
         }
 
         urlSet.forEach(url->{
-//          System.out.println("==========news url =========="+url);
             News news= new News();
             Document newsHtml = null;
             try{
@@ -84,7 +87,7 @@ public class BBCCrawlerUtil implements BasicCrawler{
                     newsService.saveNews(news);
                 }
                 else {
-                    System.out.println("There is no article!");
+                    LOGGER.error("There is no article!");
                 }
             }catch (Exception e){
                 e.printStackTrace();

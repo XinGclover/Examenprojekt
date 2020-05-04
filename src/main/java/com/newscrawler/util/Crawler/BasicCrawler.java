@@ -23,7 +23,6 @@ public interface BasicCrawler {
         CloseableHttpClient httpclient = HttpClients.createDefault();
         HttpGet request = new HttpGet(url);
         request.setHeader(HttpHeaders.CONTENT_TYPE, "application/json");
-//        request.setHeader(HttpHeaders.CONTENT_TYPE, "application/x-www-form-urlencoded");
         request.setHeader("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0");
         request.setHeader("Connection","keep-alive");
         request.setHeader("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");

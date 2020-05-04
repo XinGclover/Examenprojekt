@@ -1,7 +1,6 @@
 package com.newscrawler.controller;
 
 import com.newscrawler.entity.News;
-import com.newscrawler.util.Analysis.KeywordGenerator;
 import com.newscrawler.util.Crawler.BBCCrawlerUtil;
 import com.newscrawler.util.Crawler.SVTCrawlerUtil;
 import com.newscrawler.service.NewsService;

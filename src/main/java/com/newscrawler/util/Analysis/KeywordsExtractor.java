@@ -5,12 +5,8 @@ import com.newscrawler.entity.News;
 import com.newscrawler.service.KeywordService;
 import com.newscrawler.service.NewsService;
 import org.apache.lucene.analysis.TokenStream;
-import org.apache.lucene.analysis.core.LowerCaseFilter;
-import org.apache.lucene.analysis.core.StopFilter;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.en.PorterStemFilter;
-import org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilter;
-import org.apache.lucene.analysis.standard.ClassicFilter;
 import org.apache.lucene.analysis.standard.StandardTokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.slf4j.Logger;
@@ -30,7 +26,7 @@ import static org.apache.lucene.analysis.en.EnglishAnalyzer.ENGLISH_STOP_WORDS_S
  */
 @Component
 public class KeywordsExtractor {
-    private static final Logger LOGGER = LoggerFactory.getLogger(KeywordGenerator.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(KeywordsExtractor.class);
     private final NewsService newsService;
     private final KeywordService keywordService;
     private final EnglishAnalyzer analyzer;
