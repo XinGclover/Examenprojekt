@@ -16,11 +16,14 @@ import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+import org.tartarus.snowball.ext.PorterStemmer;
 
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.*;
 import java.util.stream.Collectors;
+
+import static org.apache.lucene.analysis.en.EnglishAnalyzer.ENGLISH_STOP_WORDS_SET;
 
 /**
  * Keywords extractor functionality handler
@@ -30,10 +33,14 @@ public class KeywordsExtractor {
     private static final Logger LOGGER = LoggerFactory.getLogger(KeywordGenerator.class);
     private final NewsService newsService;
     private final KeywordService keywordService;
+    private final EnglishAnalyzer analyzer;
+    private final PorterStemmer stemmer;
 
     public KeywordsExtractor(NewsService newsService, KeywordService keywordService) {
         this.newsService = newsService;
         this.keywordService = keywordService;
+        analyzer =  new EnglishAnalyzer(ENGLISH_STOP_WORDS_SET);
+        stemmer = new PorterStemmer();
     }
 
     /**
@@ -45,7 +52,7 @@ public class KeywordsExtractor {
      */
     public List<Keyword> getKeywordsList(String content) throws IOException {
 
-        TokenStream tokenStream = null;
+        TokenStream stream = null;
 
         try {
             // treat the dashed words, don't let separate them during the processing
@@ -57,17 +64,14 @@ public class KeywordsExtractor {
             // replace most common English contractions
             content = content.replaceAll("(?:'(?:[tdsm]|[vr]e|ll))+\\b", "");
 
-            StandardTokenizer stdToken = new StandardTokenizer();
-            stdToken.setReader(new StringReader(content));
-
-            tokenStream = new StopFilter(new ASCIIFoldingFilter(new ClassicFilter(new LowerCaseFilter(stdToken))), EnglishAnalyzer.getDefaultStopSet());
-            tokenStream.reset();
+            stream = analyzer.tokenStream("contents", new StringReader(content));
+            stream.reset();
 
             List<Keyword> Keywords = new LinkedList<>();
 
-            CharTermAttribute token = tokenStream.getAttribute(CharTermAttribute.class);
+            CharTermAttribute token = stream.getAttribute(CharTermAttribute.class);
 
-            while (tokenStream.incrementToken()) {
+            while (stream.incrementToken()) {
 
                 String term = token.toString();
                 String stem = getStemForm(term);
@@ -84,9 +88,9 @@ public class KeywordsExtractor {
 
             return Keywords;
         } finally {
-            if (tokenStream != null) {
+            if (stream != null) {
                 try {
-                    tokenStream.close();
+                    stream.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -160,14 +164,13 @@ public class KeywordsExtractor {
                 return element;
             }
         }
-
         collection.add(sample);
 
         return sample;
     }
     
     public List<Keyword> getTopTenKeywords(List<Keyword> keywordList){
-       return keywordList.stream().sorted().limit(10).collect(Collectors.toList());
+       return keywordList.stream().limit(10).collect(Collectors.toList());
     }
 
     public void saveTopTenKeywords() throws IOException {
