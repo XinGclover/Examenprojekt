@@ -2,12 +2,14 @@ package com.newscrawler.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Keyword entity including stem, frequency
+ */
 @Entity
 @Getter
 @Setter
@@ -28,21 +30,31 @@ public class Keyword implements Comparable<Keyword>{
 
     private int frequency;
 
-    @ElementCollection(targetClass=String.class)
+
+    @Transient
     private Set<String> terms = new HashSet<>();
 
+    /**
+     * When add a term to list, frequency add one
+     * @param term term of keyword
+     */
     public void add(String term){
         this.terms.add(term);
         this.frequency++;
     }
 
+    /**
+     * Compare the current object with the specified object
+     * @param o object of Keyword
+     * @return  a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
+     */
     @Override
     public int compareTo(Keyword o) {
         return Integer.valueOf(o.frequency).compareTo(this.frequency);
     }
+
     /**
      * Get stem's hashcode
-     *
      * @return int, which contains stem's hashcode
      */
     @Override
@@ -52,8 +64,7 @@ public class Keyword implements Comparable<Keyword>{
 
     /**
      * Check if two stems are equal
-     *
-     * @param o
+     * @param o object of Keyword
      * @return boolean, true if two stems are equal
      */
     @Override

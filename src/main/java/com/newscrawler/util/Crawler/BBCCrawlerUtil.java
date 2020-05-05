@@ -2,7 +2,6 @@ package com.newscrawler.util.Crawler;
 
 import com.newscrawler.entity.News;
 import com.newscrawler.service.NewsService;
-import com.newscrawler.util.Analysis.KeywordsExtractor;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -20,6 +19,11 @@ import java.util.Date;
 import java.util.HashSet;
 
 
+/**
+ * Specialized scraping for BBC, obtain data from requied elements on BBC.
+ * Use Jsoup to select necessary elements from document and fetch text or attribute from those elements.
+ * @see BasicCrawler
+ */
 @Component
 public class BBCCrawlerUtil implements BasicCrawler{
     @Autowired
@@ -27,25 +31,16 @@ public class BBCCrawlerUtil implements BasicCrawler{
     private String baseUrl= "https://www.bbc.com/news";
     private static final Logger LOGGER = LoggerFactory.getLogger(BBCCrawlerUtil.class);
 
-    //fetch and parse a HTML document from the web
+
+    /**
+     * Fetching data from requied elements and call newsservice to save data as entity to database
+     * @throws MalformedURLException
+     */
     @Override
-    public void pullNews() throws MalformedURLException {
+    public void pullNews() throws IOException {
         Document document= null;
-        try{
-            document= getHtmlFromUrl(baseUrl);
-            BufferedWriter writer = null;
-            try
-            {
-                writer = new BufferedWriter( new FileWriter("/Users/xingao/Documents/Nackademin/Examenarbete/Mythesis/MyProject/NewsCrawler/newscrawler/BBC.txt"));
-                writer.write(document.toString());
-            }
-            catch ( IOException e)
-            {
-                System.out.println("Can not save to file!");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        document= getHtmlFromUrl(baseUrl);
+        saveDocumentAsFile(document,"/Users/xingao/Documents/Nackademin/Examenarbete/Mythesis/MyProject/NewsCrawler/newscrawler/BBC.txt");
         Elements hrefElements = document.select("div#site-container").select("a[href]");
 
         HashSet<String> urlSet = new HashSet<>();
@@ -93,6 +88,25 @@ public class BBCCrawlerUtil implements BasicCrawler{
                 e.printStackTrace();
             }
         });
+    }
+
+
+    /**
+     * Save parsed html document to a text file
+     * @param document html document parsed from Jsoup
+     * @param fileName fileName that used to save parsed html ducument
+     */
+    public void saveDocumentAsFile(Document document, String fileName){
+        BufferedWriter writer = null;
+        try
+        {
+            writer = new BufferedWriter( new FileWriter(fileName));
+            writer.write(document.toString());
+        }
+        catch ( IOException e)
+        {
+            LOGGER.error("Can not save to file!");
+        }
     }
 
 

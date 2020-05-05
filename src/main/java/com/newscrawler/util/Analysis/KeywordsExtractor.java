@@ -22,7 +22,9 @@ import java.util.stream.Collectors;
 import static org.apache.lucene.analysis.en.EnglishAnalyzer.ENGLISH_STOP_WORDS_SET;
 
 /**
- * Keywords extractor functionality handler
+ * Keywords extractor functional handler.
+ * Use EnglishAnalyzer of Apache Lucene to convert text to terms then sort list of keywords with stem form by frequency.
+ * @author Xin Gao
  */
 @Component
 public class KeywordsExtractor {
@@ -41,48 +43,35 @@ public class KeywordsExtractor {
 
     /**
      * Get list of keywords with stem form, frequency rank, and terms dictionary
-     *
-     * @param content
-     * @return List<CardKeyword>, which contains keywords cards
-     * @throws IOException
+     * @param content content of a news uesed to extract keywords
+     * @return List<Keyword> which contains keywords
      */
-    public List<Keyword> getKeywordsList(String content) throws IOException {
+    public List<Keyword> getKeywordsList(String content)  {
 
         TokenStream stream = null;
 
         try {
-            // treat the dashed words, don't let separate them during the processing
             content = content.replaceAll("-+", "-0");
-
-            // replace any punctuation char but apostrophes and dashes with a space
             content = content.replaceAll("[\\p{Punct}&&[^'-]]+", " ");
-
-            // replace most common English contractions
             content = content.replaceAll("(?:'(?:[tdsm]|[vr]e|ll))+\\b", "");
-
             stream = analyzer.tokenStream("contents", new StringReader(content));
             stream.reset();
-
             List<Keyword> Keywords = new LinkedList<>();
-
             CharTermAttribute token = stream.getAttribute(CharTermAttribute.class);
 
             while (stream.incrementToken()) {
-
                 String term = token.toString();
                 String stem = getStemForm(term);
-
                 if (stem != null) {
                    Keyword cardKeyword = find(Keywords, new Keyword(stem.replaceAll("-0", "-")));
-                    // treat the dashed words back, let look them pretty
                     cardKeyword.add(term.replaceAll("-0", "-"));
                 }
             }
 
-            // reverse sort by frequency
             Collections.sort(Keywords);
-
             return Keywords;
+        } catch (IOException e) {
+            e.printStackTrace();
         } finally {
             if (stream != null) {
                 try {
@@ -91,37 +80,27 @@ public class KeywordsExtractor {
                     e.printStackTrace();
                 }
             }
-        }
+        }return null;
     }
 
     /**
      * Get stem form of the term
-     *
-     * @param term
+     * @param term the most fundamental indexed representation of text
      * @return String, which contains the stemmed form of the term
-     * @throws IOException
      */
-    public String getStemForm(String term) throws IOException {
-
+    public String getStemForm(String term)  {
         TokenStream tokenStream = null;
-
         try {
             StandardTokenizer stdToken = new StandardTokenizer();
             stdToken.setReader(new StringReader(term));
-
             tokenStream = new PorterStemFilter(stdToken);
             tokenStream.reset();
-
-            // eliminate duplicate tokens by adding them to a set
             Set<String> stems = new HashSet<>();
-
             CharTermAttribute token = tokenStream.getAttribute(CharTermAttribute.class);
 
             while (tokenStream.incrementToken()) {
                 stems.add(token.toString());
             }
-
-            // if stem form was not found or more than 2 stems have been found, return null
             if (stems.size() != 1) {
                 return null;
             }
@@ -134,6 +113,8 @@ public class KeywordsExtractor {
             }
 
             return stem;
+        } catch (IOException e) {
+            e.printStackTrace();
         } finally {
             if (tokenStream != null) {
                 try {
@@ -142,15 +123,14 @@ public class KeywordsExtractor {
                     e.printStackTrace();
                 }
             }
-        }
+        }return null;
     }
 
     /**
      * Find sample in collection
-     *
-     * @param collection
-     * @param sample
-     * @param <T>
+     * @param collection object of Collection
+     * @param sample object of T
+     * @param <T> the type of elements in this collection
      * @return <T> T, which contains the found object within collection if exists, otherwise the initially searched object
      */
     public <T> T find(Collection<T> collection, T sample) {
@@ -164,12 +144,20 @@ public class KeywordsExtractor {
 
         return sample;
     }
-    
+
+    /**
+     * Get the first 10 elements of a list
+     * @param keywordList list of all keywords of a news
+     * @return the list of keywords with top-10 frequency
+     */
     public List<Keyword> getTopTenKeywords(List<Keyword> keywordList){
        return keywordList.stream().limit(10).collect(Collectors.toList());
     }
 
-    public void saveTopTenKeywords() throws IOException {
+    /**
+     * Save the Top-10 terms of a news in database
+     */
+    public void saveTopTenKeywords() {
         List<News> newsList= newsService.findAllNews();
         for(News news:newsList){
             List<Keyword> topTenKeywords= getTopTenKeywords(getKeywordsList(news.getContent()));

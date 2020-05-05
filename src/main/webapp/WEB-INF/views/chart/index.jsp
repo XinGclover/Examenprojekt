@@ -82,7 +82,7 @@
                                 Accept : "application/json; charset=utf-8",
                                 "Content-Type" : "application/json; charset=utf-8"
                             },
-                            url : '${pageContext.request.contextPath}/news/bbc/'+newsId,
+                            url : '${pageContext.request.contextPath}/news/'+newsId,
                             success :function(response) {
                                 $('#newsTitle').html(response.title);
                             }
