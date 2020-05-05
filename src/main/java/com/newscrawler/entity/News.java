@@ -3,13 +3,13 @@ package com.newscrawler.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
 
+/**
+ * News entity
+ */
 @Entity
 @Getter
 @Setter

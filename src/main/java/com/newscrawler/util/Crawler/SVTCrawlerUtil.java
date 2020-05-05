@@ -6,20 +6,27 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Date;
 import java.util.HashSet;
 
+/**
+ * Specialized scraping for SVT, obtain data from requied elements on BBC
+ * @see BasicCrawler
+ */
 @Component
 public class SVTCrawlerUtil implements BasicCrawler{
     @Autowired
     private NewsService newsService;
     private String baseUrl= "https://www.svt.se";
 
-   //fetch and parse a HTML document from the web
+    /**
+     * Fetching data from requied elements and call newsservice to save data as entity to database
+     * @throws MalformedURLException
+     * @see BasicCrawler
+     */
     @Override
     public void pullNews() throws MalformedURLException {
         Document document= null;
@@ -54,7 +61,6 @@ public class SVTCrawlerUtil implements BasicCrawler{
         }
 
         urlSet.forEach(url->{
-//          System.out.println("==========news url =========="+url);
             News news= new News();
             Document newsHtml = null;
             try{
