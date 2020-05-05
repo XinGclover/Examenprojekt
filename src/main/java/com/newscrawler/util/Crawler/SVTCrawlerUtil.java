@@ -24,7 +24,7 @@ public class SVTCrawlerUtil implements BasicCrawler{
 
     /**
      * Fetching data from requied elements and call newsservice to save data as entity to database
-     * @throws MalformedURLException
+     * @throws MalformedURLException Thrown to indicate that a malformed URL has occurred. Either no legal protocol could be found in a specification string or the string could not be parsed
      * @see BasicCrawler
      */
     @Override

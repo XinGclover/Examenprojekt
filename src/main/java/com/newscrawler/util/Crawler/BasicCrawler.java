@@ -10,10 +10,8 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+
+import java.io.*;
 import java.net.MalformedURLException;
 
 /**
@@ -23,15 +21,17 @@ import java.net.MalformedURLException;
  *
  */
 public interface BasicCrawler {
-    void pullNews() throws MalformedURLException;
+    void pullNews() throws IOException;
 
-    /**
+
+
+     /**
      * Get response with HttpClient then parse html document with Jsoup
      * @param url Url of the scraping website
      * @return Document, which contains html information
      * @throws IOException
-     */
-    default Document  getHtmlFromUrl(String url) throws IOException {
+      **/
+    default Document getHtmlFromUrl(String url) throws IOException {
         CloseableHttpClient httpclient = HttpClients.createDefault();
         HttpGet request = new HttpGet(url);
         request.setHeader(HttpHeaders.CONTENT_TYPE, "application/json");
@@ -68,7 +68,13 @@ public interface BasicCrawler {
                     throw new ClientProtocolException("Unexpected response status: " + status);
                 }
             }
-        }finally {
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (ClientProtocolException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
             httpclient.close();
         }return null;
     }

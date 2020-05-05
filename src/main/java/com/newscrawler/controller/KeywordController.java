@@ -39,11 +39,10 @@ public class KeywordController {
 
     /**
      * Call the method to save top-10 keywords of all the news to database
-     * @throws IOException
      */
     @ApiOperation(value = "Get Top-10 Keywords from News")
     @GetMapping("/topten")
-    public void getTopTenKeywords() throws IOException {
+    public void getTopTenKeywords()  {
         keywordsExtractor.saveTopTenKeywords();
     }
 

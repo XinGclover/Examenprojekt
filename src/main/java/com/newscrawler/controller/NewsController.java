@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.List;
 
@@ -27,9 +29,9 @@ public class NewsController {
 
     /**
      * Constructor
-     * @param svtCrawler
-     * @param bbcCrawler
-     * @param newsService
+     * @param svtCrawler instance of SVTCrawler
+     * @param bbcCrawler instance of BBCCrawler
+     * @param newsService instance of NewsService
      */
     @Autowired
     public NewsController(SVTCrawlerUtil svtCrawler, BBCCrawlerUtil bbcCrawler, NewsService newsService) {
@@ -40,7 +42,7 @@ public class NewsController {
 
     /**
      * Scape news from SVT
-     * @throws MalformedURLException
+     * @throws MalformedURLException Thrown to indicate that a malformed URL has occurred. Either no legal protocol could be found in a specification string or the string could not be parsed
      */
     @ApiOperation(value = "Scape News from SVT")
     @GetMapping("/svt")
@@ -50,11 +52,11 @@ public class NewsController {
 
     /**
      * Scape news from BBC
-     * @throws MalformedURLException
+     * @throws MalformedURLException Thrown to indicate that a malformed URL has occurred. Either no legal protocol could be found in a specification string or the string could not be parsed
      */
     @ApiOperation(value = "Scape News from BBC")
     @GetMapping("/bbc")
-    public void pullBBCNews() throws MalformedURLException {
+    public void pullBBCNews() throws IOException {
         bbcCrawler.pullNews();
     }
 

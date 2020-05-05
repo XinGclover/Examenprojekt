@@ -37,14 +37,10 @@ public class BBCCrawlerUtil implements BasicCrawler{
      * @throws MalformedURLException
      */
     @Override
-    public void pullNews() throws MalformedURLException {
+    public void pullNews() throws IOException {
         Document document= null;
-        try{
-            document= getHtmlFromUrl(baseUrl);
-            saveDocumentAsFile(document,"/Users/xingao/Documents/Nackademin/Examenarbete/Mythesis/MyProject/NewsCrawler/newscrawler/BBC.txt");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        document= getHtmlFromUrl(baseUrl);
+        saveDocumentAsFile(document,"/Users/xingao/Documents/Nackademin/Examenarbete/Mythesis/MyProject/NewsCrawler/newscrawler/BBC.txt");
         Elements hrefElements = document.select("div#site-container").select("a[href]");
 
         HashSet<String> urlSet = new HashSet<>();

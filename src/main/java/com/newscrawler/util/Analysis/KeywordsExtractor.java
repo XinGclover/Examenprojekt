@@ -44,10 +44,9 @@ public class KeywordsExtractor {
     /**
      * Get list of keywords with stem form, frequency rank, and terms dictionary
      * @param content content of a news uesed to extract keywords
-     * @return List<CardKeyword>, which contains keywords cards
-     * @throws IOException
+     * @return List<Keyword> which contains keywords
      */
-    public List<Keyword> getKeywordsList(String content) throws IOException {
+    public List<Keyword> getKeywordsList(String content)  {
 
         TokenStream stream = null;
 
@@ -71,6 +70,8 @@ public class KeywordsExtractor {
 
             Collections.sort(Keywords);
             return Keywords;
+        } catch (IOException e) {
+            e.printStackTrace();
         } finally {
             if (stream != null) {
                 try {
@@ -79,16 +80,15 @@ public class KeywordsExtractor {
                     e.printStackTrace();
                 }
             }
-        }
+        }return null;
     }
 
     /**
      * Get stem form of the term
      * @param term the most fundamental indexed representation of text
      * @return String, which contains the stemmed form of the term
-     * @throws IOException
      */
-    public String getStemForm(String term) throws IOException {
+    public String getStemForm(String term)  {
         TokenStream tokenStream = null;
         try {
             StandardTokenizer stdToken = new StandardTokenizer();
@@ -113,6 +113,8 @@ public class KeywordsExtractor {
             }
 
             return stem;
+        } catch (IOException e) {
+            e.printStackTrace();
         } finally {
             if (tokenStream != null) {
                 try {
@@ -121,14 +123,14 @@ public class KeywordsExtractor {
                     e.printStackTrace();
                 }
             }
-        }
+        }return null;
     }
 
     /**
      * Find sample in collection
      * @param collection object of Collection
      * @param sample object of T
-     * @param <T> the type of elements in this collectio
+     * @param <T> the type of elements in this collection
      * @return <T> T, which contains the found object within collection if exists, otherwise the initially searched object
      */
     public <T> T find(Collection<T> collection, T sample) {
@@ -145,8 +147,8 @@ public class KeywordsExtractor {
 
     /**
      * Get the first 10 elements of a list
-     * @param keywordList
-     * @return
+     * @param keywordList list of all keywords of a news
+     * @return the list of keywords with top-10 frequency
      */
     public List<Keyword> getTopTenKeywords(List<Keyword> keywordList){
        return keywordList.stream().limit(10).collect(Collectors.toList());
@@ -154,9 +156,8 @@ public class KeywordsExtractor {
 
     /**
      * Save the Top-10 terms of a news in database
-     * @throws IOException
      */
-    public void saveTopTenKeywords() throws IOException {
+    public void saveTopTenKeywords() {
         List<News> newsList= newsService.findAllNews();
         for(News news:newsList){
             List<Keyword> topTenKeywords= getTopTenKeywords(getKeywordsList(news.getContent()));
