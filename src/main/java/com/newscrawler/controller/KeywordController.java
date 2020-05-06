@@ -3,6 +3,7 @@ package com.newscrawler.controller;
 import com.newscrawler.entity.Keyword;
 import com.newscrawler.service.KeywordService;
 import com.newscrawler.util.Analysis.KeywordsExtractor;
+import com.newscrawler.util.Visualization.KumoWordCloud;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
@@ -11,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import java.io.IOException;
+
 import java.util.List;
 
 
@@ -25,16 +26,19 @@ public class KeywordController {
     private static final Logger LOGGER = LoggerFactory.getLogger(KeywordController.class);
     private KeywordService keywordService;
     private KeywordsExtractor keywordsExtractor;
+    private KumoWordCloud kumoWordCloud;
 
     /**
      * Constructor
      * @param keywordService object of KeywordService
      * @param keywordsExtractor object of KeywordExtractor
+     * @param kumoWordCloud
      */
 @Autowired
-    public KeywordController( KeywordService keywordService, KeywordsExtractor keywordsExtractor) {
+    public KeywordController(KeywordService keywordService, KeywordsExtractor keywordsExtractor, KumoWordCloud kumoWordCloud) {
         this.keywordService = keywordService;
         this.keywordsExtractor = keywordsExtractor;
+        this.kumoWordCloud = kumoWordCloud;
 }
 
     /**
@@ -64,4 +68,11 @@ public class KeywordController {
         }
         return ResponseEntity.status(HttpStatus.OK).body(keywordList);
     }
+
+    @ApiOperation(value = "Get keywords by newsId")
+    @GetMapping("/wordcloud/{id}")
+    public ResponseEntity<String> getWordCloud(@PathVariable Long id){
+        return ResponseEntity.status(HttpStatus.OK).body(kumoWordCloud.getWordCloud(id));
+    }
+
 }

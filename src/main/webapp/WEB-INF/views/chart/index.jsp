@@ -32,6 +32,7 @@
                             drawChart(result);
                         });
                         getNewsTitle();
+                        getWordCloud();
                     }
                 });
 
@@ -89,6 +90,23 @@
                         });
                     });
                 }
+
+                function getWordCloud() {
+                    $(document).ready(function() {
+                        $.ajax({
+                            type : 'GET',
+                            headers : {
+                                Accept : "text/plain;charset=UTF-8",
+                                "Content-Type" : "text/plain;charset=UTF-8"
+                            },
+                            url : '${pageContext.request.contextPath}/keyword/wordcloud/'+newsId,
+                            success :function(data) {
+                                console.log(data);
+                                $('#wordcloud').attr("src","data:image/png;base64,"+data);
+                            }
+                        });
+                    });
+                }
             });
         }
 
@@ -106,6 +124,7 @@
     <tr>
 <%--        <td><div id="piechart_div" style="border: 1px solid #ccc"></div></td>--%>
         <td><div id="barchart_div" style="border: 1px solid #ccc"></div></td>
+        <td><div><img id="wordcloud"></div></td>
     </tr>
 </table>
 

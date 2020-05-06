@@ -49,7 +49,7 @@
   <meta name="x-country" content="se"> 
   <meta name="x-audience" content="International"> 
   <meta name="CPS_AUDIENCE" content="International"> 
-  <meta name="CPS_CHANGEQUEUEID" content="156998681"> 
+  <meta name="CPS_CHANGEQUEUEID" content="157001275"> 
   <script type="application/ld+json">
          {"@context":"http://schema.org","@type":"WebPage","description":"Visit BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and UK news as well as local and regional perspectives. Also entertainment, business, science, technology and health news.","url":"https://www.bbc.co.uk/news","mainEntityOfPage":"https://www.bbc.co.uk/news","publisher":{"@type":"NewsMediaOrganization","name":"BBC News","logo":"//m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/2.5.2/bbc_news_logo.png","publishingPrinciples":"https://www.bbc.co.uk/news/help-41670342"},"name":"Home - BBC News"}
         </script> 
@@ -188,7 +188,7 @@
             istatsLabels['page_type'] = 'Index';
             istatsLabels['section'] = '%2Fnews%2Ffront_page';
             istatsLabels['first_pub'] = '2010-06-08T09%3A21%3A22%2B00%3A00';
-            istatsLabels['last_editorial_update'] = '2020-05-05T18%3A52%3A28%2B00%3A00';
+            istatsLabels['last_editorial_update'] = '2020-05-05T20%3A50%3A22%2B00%3A00';
             istatsLabels['curie'] = 'b5c53243-a695-e059-e040-850a02846523%2Fmobile%2Fdomestic';
             istatsLabels['for_nation'] = 'se';
             istatsLabels['bbc_site'] = 'news';
@@ -539,7 +539,7 @@
         });
       }</script> 
   <script src="https://nav.files.bbci.co.uk/orbit/1b2e292884201dd13064a9204e177864/js/api.min.js"></script>
-  <script type="text/javascript">window.bbcFlagpoles_istats="ON",require.config({paths:{"istats-1":"https://nav.files.bbci.co.uk/orbit-webmodules/0.0.2-448.45dcd56/istats/istats-1"}}),require(["istats-1","orb/cookies"],function(t,a){if(a.isAllowed("s1")){var e=(o=document.location.href.match(/^(?:https|http):\/\/\w*\.(?:(int|test|stage|live|)\.)?bbc\.(?:co\.uk|com)/))?void 0===o[1]||""===o[1]||"live"===o[1]?"//sa.bbc.co.uk/bbc/bbc/s":"//sa.bbc.co.uk/bbc/"+o[1]+"/s":"//sa.bbc.co.uk/bbc/test/s";t.addCollector({name:"default",url:e,separator:"&"});var s="news.page";t.setCountername(s),window.istats_countername&&t.setCountername(window.istats_countername),t.addLabels("ml_name=webmodule&ml_version=0.0.2-448.45dcd56&blq_e=orbit&blq_r=orbit&blq_s=orbit&blq_v=default&language=en&name=news.page&cps_asset_id=10263779&page_type=Index&section=%2Fnews%2Ffront_page&first_pub=2010-06-08T09%3A21%3A22%2B00%3A00&last_editorial_update=2020-05-05T18%3A52%3A28%2B00%3A00&curie=b5c53243-a695-e059-e040-850a02846523%2Fmobile%2Fdomestic&for_nation=se&bbc_site=news&app_type=responsive&language=en-gb&prod_name=news&app_name=news&ns_ti=Home%20-%20BBC%20News&assembly_layer=mozart")}var o});</script>
+  <script type="text/javascript">window.bbcFlagpoles_istats="ON",require.config({paths:{"istats-1":"https://nav.files.bbci.co.uk/orbit-webmodules/0.0.2-448.45dcd56/istats/istats-1"}}),require(["istats-1","orb/cookies"],function(t,a){if(a.isAllowed("s1")){var e=(o=document.location.href.match(/^(?:https|http):\/\/\w*\.(?:(int|test|stage|live|)\.)?bbc\.(?:co\.uk|com)/))?void 0===o[1]||""===o[1]||"live"===o[1]?"//sa.bbc.co.uk/bbc/bbc/s":"//sa.bbc.co.uk/bbc/"+o[1]+"/s":"//sa.bbc.co.uk/bbc/test/s";t.addCollector({name:"default",url:e,separator:"&"});var s="news.page";t.setCountername(s),window.istats_countername&&t.setCountername(window.istats_countername),t.addLabels("ml_name=webmodule&ml_version=0.0.2-448.45dcd56&blq_e=orbit&blq_r=orbit&blq_s=orbit&blq_v=default&language=en&name=news.page&cps_asset_id=10263779&page_type=Index&section=%2Fnews%2Ffront_page&first_pub=2010-06-08T09%3A21%3A22%2B00%3A00&last_editorial_update=2020-05-05T20%3A50%3A22%2B00%3A00&curie=b5c53243-a695-e059-e040-850a02846523%2Fmobile%2Fdomestic&for_nation=se&bbc_site=news&app_type=responsive&language=en-gb&prod_name=news&app_name=news&ns_ti=Home%20-%20BBC%20News&assembly_layer=mozart")}var o});</script>
   <link rel="stylesheet" href="https://static.files.bbci.co.uk/account/id-cta/1.42.0/style/id-cta.css">
   <!--[if IE 8]><link href="https://static.files.bbci.co.uk/account/id-cta/1.42.0/style/ie8.css" rel="stylesheet"/> <![endif]-->
   <script type="text/javascript">(function() {if (!window.require) {throw new Error('idcta: could not find require module');}if (typeof(map) == 'undefined') {var map = {};}if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect) {document.documentElement.className += ' id-svg';}var ptrt = new RegExp("[\\?&]ptrt=([^&]*)").exec(document.location.href);var ENDPOINT_URL = 'https://idcta.api.bbc.co.uk';var ENDPOINT_CONFIG = ('/idcta/config?callback=&ptrt=' + encodeURIComponent((ptrt ? ptrt[1] : document.location.href))).replace(/\&amp;/g, '&');var ENDPOINT_TRANSLATIONS = '/idcta/translations?callback=';function hasPromise() {var P = window.Promise;var promiseToString = null;if (P) {try {promiseToString = Object.prototype.toString.call(P.resolve());} catch(e) {/*silently ignored*/}}return (promiseToString === '[object Promise]' && !P.cast);}if (hasPromise()) {define('idcta/es6-promise', function() {return window.Promise;});define('idcta-v2/es6-promise', function() {return window.Promise;});}map['idcta-v2'] = 'https://static.files.bbci.co.uk/account/id-cta/1.42.0/modules/idcta-v2';map['idcta-v2/config'] = ENDPOINT_URL + ENDPOINT_CONFIG;map['idcta-v2/translations'] = ENDPOINT_URL + ENDPOINT_TRANSLATIONS;map['idcta'] = 'https://static.files.bbci.co.uk/account/id-cta/1.8.2/modules/idcta';map['idcta-v2/idcta-1'] = 'https://static.files.bbci.co.uk/account/id-cta/1.42.0/modules/idcta-v2/dist/idcta-1.min';map['idcta-v2/experiment-snippet'] = 'https://cdn.optimizely.com/public/4621041136/s/idcta_live';const idctaShim = {deps: ['idcta-v2/idcta-1'],};require({shim: {'idcta-v2/statusbar': idctaShim,'idcta-v2/id-config': idctaShim},map: {'*': {'idcta/idcta-1': 'idcta-v2/idcta-1','idcta': 'idcta-v2',}},paths: map});window.idctaBaseUrl = ENDPOINT_URL;define('idcta/config', ['idcta-v2/config'], function(data) {return data;});define('idcta/translations', ['idcta-v2/translations'], function(data) {return data;});})();</script> 
@@ -667,6 +667,15 @@ if (typeof bbcdotcom !== 'undefined') {
   <!--[if gt IE 8]><!-->
   <noscript class="morph-core-style">
    <!--<![endif]-->
+   <style>.lx-c-dynamic-promo{direction:ltr}.lx-c-dynamic-promo a{text-decoration:none}.lx-c-dynamic-promo--background{background-color:#F2EFEC}.lx-c-dynamic-promo__title{display:inline-block;vertical-align:middle;margin:0}.gs-t-news .lx-c-dynamic-promo__title{color:#222}.gs-t-news .lx-c-dynamic-promo__title:focus,.gs-t-news .lx-c-dynamic-promo__title:hover,.lx-c-dynamic-promo--hover .gs-t-news .lx-c-dynamic-promo__title{color:#7B756F}.lx-c-dynamic-promo__attr{display:inline-block;font-weight:normal}.gs-t-news .lx-c-dynamic-promo__attr{color:#222}.gs-t-news .lx-c-dynamic-promo__attr:focus,.gs-t-news .lx-c-dynamic-promo__attr:hover,.lx-c-dynamic-promo--hover .gs-t-news .lx-c-dynamic-promo__attr{color:#7B756F}.lx-c-timeline-promo__summary,.lx-c-timeline__body{font-weight:normal;letter-spacing:initial}.lx-c-dynamic-promo__image,.lx-c-dynamic-promo__body--has-image{box-sizing:border-box}.lx-c-timeline__list{position:relative;padding:0;margin:0;list-style-type:none}.lx-c-timeline__heading-text{font-weight:normal}.gs-t-news .lx-c-timeline__heading-text{color:#5A5A5A}.gs-t-sport .lx-c-timeline__heading-text{color:#5a5a5a}.lx-c-timeline__heading-timestamp{font-weight:bold}.gs-t-news .lx-c-timeline__heading-timestamp{color:#BB1919}.gs-t-sport .lx-c-timeline__heading-timestamp{color:#1169f6}.lx-c-timeline__keypoint{display:none}
+</style>
+   <!--[if gt IE 8]><!-->
+  </noscript>
+  <!--<![endif]-->
+  <script>if (Morph.enhanced) { Morph.styles["bbc-morph-lx-dynamic-promo/2.1.1/ltr"]=true; Morph.styleSrc.push("<style>.lx-c-dynamic-promo{direction:ltr}.lx-c-dynamic-promo a{text-decoration:none}.lx-c-dynamic-promo--background{background-color:#F2EFEC}.lx-c-dynamic-promo__title{display:inline-block;vertical-align:middle;margin:0}.gs-t-news .lx-c-dynamic-promo__title{color:#222}.gs-t-news .lx-c-dynamic-promo__title:focus,.gs-t-news .lx-c-dynamic-promo__title:hover,.lx-c-dynamic-promo--hover .gs-t-news .lx-c-dynamic-promo__title{color:#7B756F}.lx-c-dynamic-promo__attr{display:inline-block;font-weight:normal}.gs-t-news .lx-c-dynamic-promo__attr{color:#222}.gs-t-news .lx-c-dynamic-promo__attr:focus,.gs-t-news .lx-c-dynamic-promo__attr:hover,.lx-c-dynamic-promo--hover .gs-t-news .lx-c-dynamic-promo__attr{color:#7B756F}.lx-c-timeline-promo__summary,.lx-c-timeline__body{font-weight:normal;letter-spacing:initial}.lx-c-dynamic-promo__image,.lx-c-dynamic-promo__body--has-image{box-sizing:border-box}@media (min-width: 20em){.lx-c-dynamic-promo__pulse{margin-left:-1.25em}}.lx-c-timeline__list{position:relative;padding:0;margin:0;list-style-type:none}.lx-c-timeline__heading-text{font-weight:normal}.gs-t-news .lx-c-timeline__heading-text{color:#5A5A5A}.gs-t-sport .lx-c-timeline__heading-text{color:#5a5a5a}.lx-c-timeline__heading-timestamp{font-weight:bold}.gs-t-news .lx-c-timeline__heading-timestamp{color:#BB1919}.gs-t-sport .lx-c-timeline__heading-timestamp{color:#1169f6}.lx-c-timeline__keypoint{display:none}@media (min-width: 20em){.lx-c-timeline__keypoint{display:block;width:1em;height:1rem;line-height:1rem;margin-left:-1.25em}.gs-t-news .lx-c-timeline__keypoint{fill:#BB1919}.gs-t-sport .lx-c-timeline__keypoint{fill:#1169f6}.lx-c-timeline__keypoint-icon{display:block;width:12px;height:12px;margin-left:auto;margin-right:auto}.lx-c-timeline__item{position:relative;padding-left:1.25em}.lx-c-timeline__item:before{display:none;content:'';width:2px;position:absolute;top:0;bottom:-.276em;left:calc(0.5em - 1px)}.gs-t-news .lx-c-timeline__item:before{background-color:#BB1919}.gs-t-sport .lx-c-timeline__item:before{background-color:#1169f6}.lx-c-dynamic-promo--has-commentary .lx-c-timeline__item:before{display:block}}@media all and (min-width: 20em) and (-ms-high-contrast: active){.lx-c-dynamic-promo--has-commentary .lx-c-timeline__item:before{display:none}}@media (min-width: 20em){.lx-c-timeline__item--first:before{bottom:-.276em;top:calc(1em + 1px)}.lx-c-timeline__item:last-child:before{display:none}}.lx-c-dynamic-promo__update-message{opacity:0;transition:opacity 200ms cubic-bezier(0, 0, 0.58, 1);will-change:opacity}.gs-t-news .lx-c-dynamic-promo__update-message{color:#bb1919}.gs-t-sport .lx-c-dynamic-promo__update-message{color:#b6e1f9}.lx-c-dynamic-promo--message-fade-in .lx-c-dynamic-promo__update-message{opacity:1}\n</style>"); }</script> 
+  <!--[if gt IE 8]><!-->
+  <noscript class="morph-core-style">
+   <!--<![endif]-->
    <style>.gs-c-media-indicator{display:inline-block;padding:8px;background-color:inherit;color:inherit}.gs-c-media-indicator--white{background-color:#fff;color:#121212}.gs-t-news .gs-c-media-indicator--white{background-color:#fff;color:#222}.gs-c-media-indicator--black{background-color:#121212;color:#fff}.gs-t-news .gs-c-media-indicator--black{background-color:#222;color:#fff}.gs-c-media-indicator--blue{background-color:#2866f6;color:#fff}.gs-c-media-indicator__text{display:inline-block;vertical-align:middle}.gs-c-media-indicator__icon+.gs-c-media-indicator__text{margin-left:8px}.gs-c-media-indicator__icon{display:inline-block;height:16px;width:16px;vertical-align:middle}.gs-c-media-indicator__icon[data-icon="gel-icon-audio"]{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAP9JREFUOBGdk73OQUEQhnFodBISiYhGR7QUEhQ6V/I1EtUXnUS0dK5AuAY34CKI+Gkk1BpfwvOyJ2T9fFmTPDuzM/MOu+ccL+BmddpTsHGT3btLhFtI31Ofo64pV/EVEzfxYxN/dB2qB9NRxu8gBhGYQx7e2g+VM/gD1DiAngKsDfqBqwVZTxYS2wOS5JYgK8BMQVgL5vvb7vWqI/xBAhaQgUBIi4PpSHE4QlQ61wESa4jEGuI0QHego+4hC2u4DtBl6SIfaalo2S/7ick18FOr/rTtk/Ef46v3IPeksBL6R0OTq+IrJtabODLxv86zOvQtrEAf1FdWQ1X8SvlOdAEBVymsGL9akgAAAABJRU5ErkJggg==")}.gs-c-media-indicator__icon[data-icon="gel-icon-gallery"]{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAP5JREFUOBHNkj1qAlEURkcloOlcgFVIjJaKtjZBCGihkj3YWbgFCzsbcQeuwyJrCATS2QRUrBRF1PF8w3vhjUhkuvngzP19d+48xvPipB3L+LCNslTCHIpyJtSbdKIJfhU+ndwefwh1eIUWTCEkrS3KJts38S/2xeTS2CdImbiBPYLOBQ85XzCCpcm9Y6Ue2PvR0Dcl0QBCAxRYNESqwBlsXnYNj5BX3r0D4j99G08DdNGusgTP8AMnFdzp1l+pgEpwvYFqGdClqv/mABWaKqIubEC5OdRAGsK/AxY0FNWJHiAH9nPa+Frfv/cjHWgawwz09gJ04AMC3Rtg+2JsL8otUHkXploQAAAAAElFTkSuQmCC")}.gs-c-media-indicator__icon[data-icon="gel-icon-video"]{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAG5JREFUOBFjYBiMYCPQUXKUOOw/UPMXIC4FYhZyDAIZAMOXgWwbUg2BaYbR/4AGzAViYWINgmlEp98ADUgCYkZCBqFrROcfBhqgAzOECcagJo1uI4xPthcoCkSyoxGUkMqAmKyERHFSpmaEEDYLAONgMV/1ntJiAAAAAElFTkSuQmCC")}.gs-c-media-indicator__icon[data-icon="gel-icon-tv"]{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAFo9M/3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAL5JREFUeNpi/A8EDCAAYwAEECNcBAYAAogBXQSkpAHKrgfiRoAAwtSDpAKsnYkBDbAgGdwIwgABBDPjABAfZMAE9WDVyOaiOxGLy1EBEyMUANmOSOIgtiJIHCCACJrAAqUbscjZA7EDAy4TQA7HGhAYjiSkgAVblKAraEQJOWyOBhqgAMQO/xHAASYHEGAEw4EgQDK1gQQ9DTBNTAwUAooNYEFiyyMHDgEgT7VAZMQXuCgKIUkafxgghy6xsQUAFPOf7fNZENkAAAAASUVO")}.gs-c-media-indicator__icon svg{display:none;visibility:hidden}.gs-c-media-indicator--small{padding:8px}.gs-c-media-indicator--small .gs-c-media-indicator__icon{width:16px;height:16px}.gs-c-media-indicator--medium{padding:16px}.gs-c-media-indicator--medium .gs-c-media-indicator__icon{width:32px;height:32px}.gs-c-media-indicator--large{padding:32px}.gs-c-media-indicator--large .gs-c-media-indicator__icon{width:32px;height:32px}.gs-c-media-indicator--inline{padding:0}
 </style>
    <!--[if gt IE 8]><!-->
@@ -757,7 +766,7 @@ if (typeof bbcdotcom !== 'undefined') {
   </noscript>
   <!--<![endif]-->
   <script>if (Morph.enhanced) { Morph.styles["bbc-morph-news-breaking/1.0.3"]=true; Morph.styleSrc.push("<style>.nw-c-news-breaking{display:inline-block;color:#BB1919;text-transform:uppercase}\n</style>"); }</script> 
-  <script type="text/javascript">Morph.initStyles(); /* u02767991150575244 */</script> 
+  <script type="text/javascript">Morph.initStyles(); /* u931294439988461 */</script> 
   <!--[if gt IE 8]><!-->
   <noscript class="morph-core-style">
    <!--<![endif]-->
@@ -860,7 +869,7 @@ if (typeof bbcdotcom !== 'undefined') {
   </noscript>
   <!--<![endif]-->
   <script>if (Morph.enhanced) { Morph.styles["bbc-morph-news-most-watched/2.1.3"]=true; Morph.styleSrc.push("<style>.nw-c-most-watched__rank{color:#BB1919;margin-top:-4px}\n</style>"); }</script> 
-  <script type="text/javascript">Morph.initStyles(); /* u762850949075073 */</script> 
+  <script type="text/javascript">Morph.initStyles(); /* u7178376168012619 */</script> 
   <script type="text/javascript">Morph.initStyles(); /* u92538241436705 */</script> 
   <!--[if gt IE 8]><!-->
   <noscript class="morph-core-style">
@@ -891,7 +900,7 @@ if (typeof bbcdotcom !== 'undefined') {
   </noscript>
   <!--<![endif]-->
   <script>if (Morph.enhanced) { Morph.styles["bbc-morph-news-most-read/2.0.3"]=true; Morph.styleSrc.push("<style>.nw-c-most-read__rank{color:#BB1919;margin-top:-3px}.nw-c-most-read__rank--10{letter-spacing:-4px}\n</style>"); }</script> 
-  <script type="text/javascript">Morph.initStyles(); /* u2546576999593526 */</script> 
+  <script type="text/javascript">Morph.initStyles(); /* u5876852562651038 */</script> 
   <script type="text/javascript">Morph.initStyles(); /* u9293121103492085 */</script> 
   <script>if (Morph.enhanced) { Morph.styles["bbc-morph-news-nations-selector/2.0.1"]=true; Morph.styleSrc.push("<style>.nw-c-nations-slice__button{background-color:#fff;border:0}.nw-c-rhino{color:#5A5A5A}.nw-c-ebon-on-oat{background-color:#F2EFEC;color:#222}.nw-c-white-on-kingfisher-hf:hover,.nw-c-white-on-kingfisher-hf:focus{background-color:#1380A1;color:#fff}\n</style>"); }</script> 
   <script type="text/javascript">Morph.initStyles(); /* u8523465527687222 */</script> 
@@ -974,7 +983,7 @@ if (typeof bbcdotcom !== 'undefined') {
   </noscript>
   <!--<![endif]-->
   <script>if (Morph.enhanced) { Morph.styles["bbc-morph-slice-heading/2.0.10"]=true; Morph.styleSrc.push("<style>.nw-c-slice-heading{color:#222;position:relative;padding-top:32px}.nw-c-slice-heading:before{content:'';position:absolute;height:1px;background:#7B756F;left:16px;right:0;top:43px}@media (min-width: 37.5em){.nw-c-slice-heading:before{top:46px}}.nw-c-slice-heading__title,.nw-c-slice-heading__action-text{position:relative;background-color:#fff}\n</style>"); }</script> 
-  <script type="text/javascript">Morph.initStyles(); /* u5765602511819452 */</script> 
+  <script type="text/javascript">Morph.initStyles(); /* u6554676520172507 */</script> 
   <!--[if gt IE 8]><!-->
   <noscript class="morph-core-style">
    <!--<![endif]-->
@@ -1322,8 +1331,8 @@ if (typeof bbcdotcom !== 'undefined') {
       </div>
      </div> 
      <div aria-label="Top Stories" id="news-top-stories-container" role="region"> 
-      <div id="u02767991150575244">
-       <div data-render-date="1588703696057" class="nw-c-top-stories gs-t-news no-touch gs-u-box-size b-pw-1280">
+      <div id="u931294439988461">
+       <div data-render-date="1588711814448" class="nw-c-top-stories gs-t-news no-touch gs-u-box-size b-pw-1280">
         <h2 class="gs-u-vh">Top Stories</h2>
         <div class="gel-wrap gs-u-pt+">
          <div class="gel-layout gel-layout--no-flex nw-c-top-stories--standard nw-c-top-stories--international">
@@ -1332,35 +1341,45 @@ if (typeof bbcdotcom !== 'undefined') {
             <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-o-primary-promo gs-u-display-inline-block gs-u-clearfix gs-u-float-right@m gs-u-ml0 gs-c-promo--flex" data-entityid="container-top-stories#1">
              <div class="gs-c-promo-body gs-u-display-none gs-u-display-inline-block@m gs-u-mt@xs gs-u-mt0@m gel-1/3@m">
               <div>
-               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-paragon-bold nw-o-link-split__anchor" href="/news/live/world-52539905"><span class="gs-o-bullet gs-c-live-pulse nw-c-live-pulse gs-u-mr"><span class="gs-o-bullet__icon gs-c-live-pulse__icon gel-icon">
-                  <svg aria-hidden="true" viewbox="0 0 32 32">
-                   <path d="M16 4c6.6 0 12 5.4 12 12s-5.4 12-12 12S4 22.6 4 16 9.4 4 16 4zm0-4C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0z"></path>
-                   <circle class="gs-c-live-pulse__icon-center" cx="16" cy="16" r="8.5"></circle>
-                  </svg></span><span class="gs-u-vh">Live</span><span class="gs-o-bullet__text gs-c-live-pulse__text" aria-hidden="true">Live</span></span><h3 class="gs-c-promo-heading__title gel-paragon-bold nw-o-link-split__text">UK reports highest death toll in Europe</h3></a>
-               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">Foreign Secretary Dominic Raab says there will be no "real verdict" until the pandemic is over.</p>
+               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-paragon-bold nw-o-link-split__anchor" href="/news/uk-52549860"><h3 class="gs-c-promo-heading__title gel-paragon-bold nw-o-link-split__text">UK coronavirus death toll higher than Italy's</h3></a>
+               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">The figure of 29,427 deaths is "a massive tragedy", the foreign secretary says, but steers clear of comparisons.</p>
               </div>
               <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
-               <li class="nw-c-promo-meta"><a href="/news/world" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From World"><span aria-hidden="true">World</span></a></li>
+               <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
+                  <svg viewbox="0 0 32 32">
+                   <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
+                   <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
+                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T19:56:38.000Z" data-seconds="1588708598" data-datetime="1h"><span aria-hidden="true" class="qa-status-date-output">1h</span><span class="gs-u-vh">an hour ago</span></time></span></li>
+               <li class="nw-c-promo-meta"><a href="/news/uk" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From UK"><span aria-hidden="true">UK</span></a></li>
+               <li class="nw-c-promo-meta"><a class="gs-o-bullet gs-o-bullet- gs-c-comment-count nw-o-link-split__anchor nw-c-comment" href="/news/uk-52549860/#comp-comments-button"><span><span class="gs-o-bullet__icon gel-icon gs-c-comment-count__icon nw-c-comment__icon">
+                   <svg aria-hidden="true" viewbox="0 0 32 32">
+                    <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
+                   </svg></span><span class="gs-o-bullet__text dna-comment-count___CPS__52549860 nw-o-link-split__text" data-comments-id="__CPS__52549860" id="dna-comment-count___CPS__52549860"></span><span class="gs-u-vh"> Comments</span></span></a></li>
               </ul>
              </div>
              <div class="gs-c-promo-image gs-u-mb gs-u-mb0@xs gs-u-float-right@m gel-2/3@m gs-u-display-block">
               <div class="gs-o-media-island">
                <div class="gs-o-responsive-image gs-o-responsive-image--16by9 gs-o-responsive-image--lead">
-                <img src="https://ichef.bbci.co.uk/news/320/cpsprodpb/DF07/production/_112159075_mediaitem112157448.jpg" sizes="(min-width: 1280px) 490px, (min-width: 900px) calc(50vw - 64px), (min-width: 600px) calc(66vw - 32px), calc(100vw - 32px)" srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/DF07/production/_112159075_mediaitem112157448.jpg 240w, https://ichef.bbci.co.uk/news/380/cpsprodpb/DF07/production/_112159075_mediaitem112157448.jpg 380w, https://ichef.bbci.co.uk/news/420/cpsprodpb/DF07/production/_112159075_mediaitem112157448.jpg 420w, https://ichef.bbci.co.uk/news/490/cpsprodpb/DF07/production/_112159075_mediaitem112157448.jpg 490w, https://ichef.bbci.co.uk/news/573/cpsprodpb/DF07/production/_112159075_mediaitem112157448.jpg 573w, https://ichef.bbci.co.uk/news/743/cpsprodpb/DF07/production/_112159075_mediaitem112157448.jpg 743w, https://ichef.bbci.co.uk/news/820/cpsprodpb/DF07/production/_112159075_mediaitem112157448.jpg 820w" alt="Intensive care team treats a patient" class="qa-srcset-image">
+                <img src="https://ichef.bbci.co.uk/news/320/cpsprodpb/16157/production/_112155409_ec1e1cef-610a-40b0-967e-5c93c577e8b4.jpg" sizes="(min-width: 1280px) 490px, (min-width: 900px) calc(50vw - 64px), (min-width: 600px) calc(66vw - 32px), calc(100vw - 32px)" srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/16157/production/_112155409_ec1e1cef-610a-40b0-967e-5c93c577e8b4.jpg 240w, https://ichef.bbci.co.uk/news/380/cpsprodpb/16157/production/_112155409_ec1e1cef-610a-40b0-967e-5c93c577e8b4.jpg 380w, https://ichef.bbci.co.uk/news/420/cpsprodpb/16157/production/_112155409_ec1e1cef-610a-40b0-967e-5c93c577e8b4.jpg 420w, https://ichef.bbci.co.uk/news/490/cpsprodpb/16157/production/_112155409_ec1e1cef-610a-40b0-967e-5c93c577e8b4.jpg 490w, https://ichef.bbci.co.uk/news/573/cpsprodpb/16157/production/_112155409_ec1e1cef-610a-40b0-967e-5c93c577e8b4.jpg 573w, https://ichef.bbci.co.uk/news/743/cpsprodpb/16157/production/_112155409_ec1e1cef-610a-40b0-967e-5c93c577e8b4.jpg 743w, https://ichef.bbci.co.uk/news/820/cpsprodpb/16157/production/_112155409_ec1e1cef-610a-40b0-967e-5c93c577e8b4.jpg 820w" alt="Ambulances at London Nightingale hospital" class="qa-srcset-image">
                </div>
               </div>
              </div>
              <div class="gs-c-promo-body gs-u-display-none@m gs-u-display-inline-block gs-u-mt@xs gs-u-mt0@m gel-1/3@m">
               <div>
-               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-paragon-bold nw-o-link-split__anchor" href="/news/live/world-52539905"><span class="gs-o-bullet gs-c-live-pulse nw-c-live-pulse gs-u-mr"><span class="gs-o-bullet__icon gs-c-live-pulse__icon gel-icon">
-                  <svg aria-hidden="true" viewbox="0 0 32 32">
-                   <path d="M16 4c6.6 0 12 5.4 12 12s-5.4 12-12 12S4 22.6 4 16 9.4 4 16 4zm0-4C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0z"></path>
-                   <circle class="gs-c-live-pulse__icon-center" cx="16" cy="16" r="8.5"></circle>
-                  </svg></span><span class="gs-u-vh">Live</span><span class="gs-o-bullet__text gs-c-live-pulse__text" aria-hidden="true">Live</span></span><h3 class="gs-c-promo-heading__title gel-paragon-bold nw-o-link-split__text">UK reports highest death toll in Europe</h3></a>
-               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">Foreign Secretary Dominic Raab says there will be no "real verdict" until the pandemic is over.</p>
+               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-paragon-bold nw-o-link-split__anchor" href="/news/uk-52549860"><h3 class="gs-c-promo-heading__title gel-paragon-bold nw-o-link-split__text">UK coronavirus death toll higher than Italy's</h3></a>
+               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">The figure of 29,427 deaths is "a massive tragedy", the foreign secretary says, but steers clear of comparisons.</p>
               </div>
               <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
-               <li class="nw-c-promo-meta"><a href="/news/world" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From World"><span aria-hidden="true">World</span></a></li>
+               <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
+                  <svg viewbox="0 0 32 32">
+                   <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
+                   <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
+                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T19:56:38.000Z" data-seconds="1588708598" data-datetime="1h"><span aria-hidden="true" class="qa-status-date-output">1h</span><span class="gs-u-vh">an hour ago</span></time></span></li>
+               <li class="nw-c-promo-meta"><a href="/news/uk" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From UK"><span aria-hidden="true">UK</span></a></li>
+               <li class="nw-c-promo-meta"><a class="gs-o-bullet gs-o-bullet- gs-c-comment-count nw-o-link-split__anchor nw-c-comment" href="/news/uk-52549860/#comp-comments-button"><span><span class="gs-o-bullet__icon gel-icon gs-c-comment-count__icon nw-c-comment__icon">
+                   <svg aria-hidden="true" viewbox="0 0 32 32">
+                    <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
+                   </svg></span><span class="gs-o-bullet__text dna-comment-count___CPS__52549860 nw-o-link-split__text" data-comments-id="__CPS__52549860" id="dna-comment-count___CPS__52549860"></span><span class="gs-u-vh"> Comments</span></span></a></li>
               </ul>
              </div>
              <div class="gel-layout__item gs-u-mt-alt">
@@ -1368,18 +1387,18 @@ if (typeof bbcdotcom !== 'undefined') {
                <div class="nw-c-top-stories-primary__related-content gs-u-pb-alt@m">
                 <h4 class="gs-u-vh">Related content</h4>
                 <ul class="gel-layout">
-                 <li class="nw-c-related-story nw-c-related-story--1 gel-1/1@xs gel-1/3@m gs-u-display-inline-block@m"><span class="nw-o-bullet+ gel-brevier-bold"><a href="/news/health-52182658" class="gel-layout__item nw-o-link-split__anchor gs-u-pt- gs-u-pb- gs-u-display-block"><span class="nw-o-bullet__icon"><span class="nw-c-circle">
+                 <li class="nw-c-related-story nw-c-related-story--1 gel-1/1@xs gel-1/3@m gs-u-display-inline-block@m"><span class="nw-o-bullet+ gel-brevier-bold"><a href="/news/52530918" class="gel-layout__item nw-o-link-split__anchor gs-u-pt- gs-u-pb- gs-u-display-block"><span class="nw-o-bullet__icon"><span class="nw-c-circle">
                       <svg aria-hidden="true" viewbox="0 0 32 32">
                        <circle cx="12" cy="21" r="7"></circle>
-                      </svg></span></span><span class="nw-o-bullet__text"><span class="nw-o-link-split__text gs-u-align-bottom">Key terms explained</span></span></a></span></li>
-                 <li class="nw-c-related-story nw-c-related-story--2 gel-1/1@xs gel-1/3@m gs-u-display-inline-block@m"><span class="nw-o-bullet+ gel-brevier-bold"><a href="/news/science-environment-52529830" class="gel-layout__item nw-o-link-split__anchor gs-u-pt- gs-u-pb- gs-u-display-block"><span class="nw-o-bullet__icon"><span class="nw-c-circle">
+                      </svg></span></span><span class="nw-o-bullet__text"><span class="nw-o-link-split__text gs-u-align-bottom">Can you compare the UK with Italy?</span></span></a></span></li>
+                 <li class="nw-c-related-story nw-c-related-story--2 gel-1/1@xs gel-1/3@m gs-u-display-inline-block@m"><span class="nw-o-bullet+ gel-brevier-bold"><a href="/news/technology-52551273" class="gel-layout__item nw-o-link-split__anchor gs-u-pt- gs-u-pb- gs-u-display-block"><span class="nw-o-bullet__icon"><span class="nw-c-circle">
                       <svg aria-hidden="true" viewbox="0 0 32 32">
                        <circle cx="12" cy="21" r="7"></circle>
-                      </svg></span></span><span class="nw-o-bullet__text"><span class="nw-o-link-split__text gs-u-align-bottom">'Missing link' may not be found</span></span></a></span></li>
-                 <li class="nw-c-related-story nw-c-related-story--3 gel-1/1@xs gel-1/3@m gs-u-display-inline-block@m"><span class="nw-o-bullet+ gel-brevier-bold"><a href="/news/explainers-52442754" class="gel-layout__item nw-o-link-split__anchor gs-u-pt- gs-u-pb- gs-u-display-block"><span class="nw-o-bullet__icon"><span class="nw-c-circle">
+                      </svg></span></span><span class="nw-o-bullet__text"><span class="nw-o-link-split__text gs-u-align-bottom">Hands on with the NHS coronavirus-tracing app</span></span></a></span></li>
+                 <li class="nw-c-related-story nw-c-related-story--3 gel-1/1@xs gel-1/3@m gs-u-display-inline-block@m"><span class="nw-o-bullet+ gel-brevier-bold"><a href="/news/explainers-52544307" class="gel-layout__item nw-o-link-split__anchor gs-u-pt- gs-u-pb- gs-u-display-block"><span class="nw-o-bullet__icon"><span class="nw-c-circle">
                       <svg aria-hidden="true" viewbox="0 0 32 32">
                        <circle cx="12" cy="21" r="7"></circle>
-                      </svg></span></span><span class="nw-o-bullet__text"><span class="nw-o-link-split__text gs-u-align-bottom">What is the UK's new app?</span></span></a></span></li>
+                      </svg></span></span><span class="nw-o-bullet__text"><span class="nw-o-link-split__text gs-u-align-bottom">When will it be safe to fly again?</span></span></a></span></li>
                 </ul>
                </div>
               </div>
@@ -1393,28 +1412,63 @@ if (typeof bbcdotcom !== 'undefined') {
            </div>
           </div>
           <div class="gel-layout__item nw-c-top-stories__secondary-item gel-1/1 gel-1/3@m gel-1/4@l nw-o-keyline nw-o-no-keyline@m gs-u-float-left nw-c-top-stories__secondary-item--1 gel-3/16@xxl gs-u-float-none@xxl gs-u-mt gs-u-mt0@xs">
-           <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-c-promo--flex" data-entityid="container-top-stories#2">
-            <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gel-1/2@xs gel-1/1@m">
-             <div class="gs-o-media-island">
-              <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
-               <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/905B/production/_111955963__100009242_gettyimages-613946528.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Virgin logo" class="qa-lazyload-image lazyload lazyautosizes">
+           <div class="gs-c-promo lx-c-dynamic-promo lx-c-dynamic-promo--secondary gs-o-faux-block-link gs-u-align-left gs-u-ml0 gs-t-news lx-c-dynamic-promo--has-commentary nw-p-oat gs-u-mb gs-u-mb+@m gs-u-pt-alt gs-u-pb- gs-u-ph-alt gs-c-promo--flex" data-mode="secondary">
+            <div class="gs-c-promo-body lx-c-dynamic-promo__body gs-u-p0">
+             <div class="lx-c-timeline gel-pica-bold">
+              <div class="gs-u-pb+ lx-c-timeline__item lx-c-timeline__item--first">
+               <div>
+                <a class="gel-pica-bold nw-o-link-split__anchor lx-c-dynamic-promo__link gs-u-display-block qa-promo-title" href="/news/live/world-52539905"><span class="gs-o-bullet gs-c-live-pulse gs-c-live-pulse--news lx-c-dynamic-promo__pulse gs-u-mr gel-1/1"><span class="gs-o-bullet__icon gs-c-live-pulse__icon gel-icon">
+                   <svg aria-hidden="true" viewbox="0 0 32 32">
+                    <path d="M16 4c6.6 0 12 5.4 12 12s-5.4 12-12 12S4 22.6 4 16 9.4 4 16 4zm0-4C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0z"></path>
+                    <circle class="gs-c-live-pulse__icon-center" cx="16" cy="16" r="8.5"></circle>
+                   </svg></span><span class="gs-u-vh">Live</span><span class="gs-o-bullet__text gs-c-live-pulse__text" aria-hidden="true">Live</span></span><h3 class="gel-pica-bold nw-o-link-split__text lx-c-dynamic-promo__title">UK reports highest death toll in Europe</h3><span class="gs-u-vh"> Less than a minute ago</span></a>
+               </div>
               </div>
+              <h4 class="gs-u-vh qa-timeline-hidden-heading"></h4>
+              <ol class="lx-c-timeline__list">
+               <li id="lx-c-timeline__item--0" class="lx-c-timeline__item qa-timeline-item gs-o-media gs-u-pb gs-u-pb-alt@l">
+                <div class="gs-u-mr- gs-o-media__img lx-c-timeline__keypoint">
+                 <div class="lx-c-timeline__keypoint-icon">
+                  <svg aria-hidden="true" viewbox="0 0 32 32">
+                   <circle stroke="none" cx="16" cy="16" r="11"></circle>
+                  </svg>
+                 </div>
+                </div>
+                <div class="gs-o-media__body gel-long-primer lx-c-timeline__body">
+                 <span class="gs-u-vh qa-promo-item-heading">Now Barbers offering haircuts in defiance of rules</span>
+                 <time aria-hidden="true" class="lx-c-timeline__heading-timestamp gs-u-mr">Now</time>
+                 <span aria-hidden="true" class="lx-c-timeline__heading-text qa-item-heading-text">Barbers offering haircuts in defiance of rules</span>
+                </div></li>
+               <li id="lx-c-timeline__item--1" class="lx-c-timeline__item qa-timeline-item gs-o-media gs-u-pb gs-u-pb-alt@l">
+                <div class="gs-u-mr- gs-o-media__img lx-c-timeline__keypoint">
+                 <div class="lx-c-timeline__keypoint-icon">
+                  <svg aria-hidden="true" viewbox="0 0 32 32">
+                   <circle stroke="none" cx="16" cy="16" r="11"></circle>
+                  </svg>
+                 </div>
+                </div>
+                <div class="gs-o-media__body gel-long-primer lx-c-timeline__body">
+                 <span class="gs-u-vh qa-promo-item-heading">4 minutes ago Explorer hails hospital garden's role in his survival</span>
+                 <time aria-hidden="true" class="lx-c-timeline__heading-timestamp gs-u-mr">4m</time>
+                 <span aria-hidden="true" class="lx-c-timeline__heading-text qa-item-heading-text">Explorer hails hospital garden's role in his survival</span>
+                </div></li>
+               <li id="lx-c-timeline__item--2" class="lx-c-timeline__item qa-timeline-item gs-o-media gs-u-pb gs-u-pb-alt@l">
+                <div class="gs-u-mr- gs-o-media__img lx-c-timeline__keypoint">
+                 <div class="lx-c-timeline__keypoint-icon">
+                  <svg aria-hidden="true" viewbox="0 0 32 32">
+                   <circle stroke="none" cx="16" cy="16" r="11"></circle>
+                  </svg>
+                 </div>
+                </div>
+                <div class="gs-o-media__body gel-long-primer lx-c-timeline__body">
+                 <span class="gs-u-vh qa-promo-item-heading">9 minutes ago Canadian police investigate phone mast fires</span>
+                 <time aria-hidden="true" class="lx-c-timeline__heading-timestamp gs-u-mr">9m</time>
+                 <span aria-hidden="true" class="lx-c-timeline__heading-text qa-item-heading-text">Canadian police investigate phone mast fires</span>
+                </div></li>
+              </ol>
              </div>
             </div>
-            <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m gs-u-mt@m">
-             <div>
-              <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/business-52542038"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Virgin Atlantic to cut 3,000 jobs and quit Gatwick</h3></a>
-              <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">The airline will axe a third of its workforce in response to the "severe impact" of coronavirus.</p>
-             </div>
-             <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
-              <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
-                 <svg viewbox="0 0 32 32">
-                  <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-                  <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                 </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T16:55:47.000Z" data-seconds="1588697747" data-datetime="2h"><span aria-hidden="true" class="qa-status-date-output">2h</span><span class="gs-u-vh">2 hours ago</span></time></span></li>
-              <li class="nw-c-promo-meta"><a href="/news/business" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Business"><span aria-hidden="true">Business</span></a></li>
-             </ul>
-            </div>
+            <a href="/news/live/world-52539905" tabindex="-1" aria-hidden="true" class="qa-overlay gs-o-faux-block-link__overlay lx-c-dynamic-promo__link">Live UK reports highest death toll in Europe Less than a minute ago</a>
            </div>
           </div>
           <div class="gel-layout__item nw-c-advert nw-c-advert--desktop gs-u-display-none gs-u-display-inline-block@xxl gs-u-float-right gel-1/4@xxl gs-u-pb0 gs-u-pb-alt@xs">
@@ -1424,43 +1478,6 @@ if (typeof bbcdotcom !== 'undefined') {
           </div>
           <div class="gel-layout__item nw-c-top-stories__secondary-item gel-1/1 gel-1/3@m gel-1/4@l nw-o-keyline nw-o-no-keyline@m gs-u-float-left nw-c-top-stories__secondary-item--2 gel-1/5@xxl">
            <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-c-promo--flex" data-entityid="container-top-stories#3">
-            <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gel-1/2@xs gel-1/1@m">
-             <div class="gs-o-media-island">
-              <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
-               <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/97BD/production/_112154883_gettyimages-506040995.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="A man in the desert in Sudan" class="qa-lazyload-image lazyload lazyautosizes">
-              </div>
-             </div>
-            </div>
-            <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m gs-u-mt@m">
-             <div>
-              <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/science-environment-52543589"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">More than 3bn could live in extreme heat by 2070</h3></a>
-              <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">Areas such as India, Australia and Africa are predicted to be among the worst affected.</p>
-             </div>
-             <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
-              <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
-                 <svg viewbox="0 0 32 32">
-                  <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-                  <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                 </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T12:55:47.000Z" data-seconds="1588683347" data-datetime="6h"><span aria-hidden="true" class="qa-status-date-output">6h</span><span class="gs-u-vh">6 hours ago</span></time></span></li>
-              <li class="nw-c-promo-meta"><a href="/news/science_and_environment" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Science &amp; Environment"><span aria-hidden="true">Science &amp; Environment</span></a></li>
-              <li class="nw-c-promo-meta"><a class="gs-o-bullet gs-o-bullet- gs-c-comment-count nw-o-link-split__anchor nw-c-comment" href="/news/science-environment-52543589/#comp-comments-button"><span><span class="gs-o-bullet__icon gel-icon gs-c-comment-count__icon nw-c-comment__icon">
-                  <svg aria-hidden="true" viewbox="0 0 32 32">
-                   <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
-                  </svg></span><span class="gs-o-bullet__text dna-comment-count___CPS__52543589 nw-o-link-split__text" data-comments-id="__CPS__52543589" id="dna-comment-count___CPS__52543589"></span><span class="gs-u-vh"> Comments</span></span></a></li>
-             </ul>
-            </div>
-           </div>
-          </div>
-          <div class="gel-layout__item nw-c-advert nw-c-advert--mobile gs-u-display-none gs-u-display-inline-block@xs gs-u-display-none@m">
-           <div id="bbccom_mpu_1_2" class="bbccom_slot gnl-mpu__ad" aria-hidden="true">
-            <div class="bbccom_advert"></div>
-           </div>
-          </div>
-          <div class="gel-layout__item nw-c-top-stories__keyline gs-u-mt+ gs-u-display-none gs-u-display-block@xs gs-u-display-none@m">
-           <div class="nw-o-keyline@xs"></div>
-          </div>
-          <div class="gel-layout__item nw-c-top-stories__secondary-item gel-1/1 gel-1/3@m gel-1/4@l nw-o-keyline nw-o-no-keyline@m gs-u-float-left nw-c-top-stories__secondary-item--3 gel-1/5@xxl">
-           <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-c-promo--flex" data-entityid="container-top-stories#4">
             <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gel-1/2@xs gel-1/1@m">
              <div class="gs-o-media-island">
               <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
@@ -1485,8 +1502,45 @@ if (typeof bbcdotcom !== 'undefined') {
                  <svg viewbox="0 0 32 32">
                   <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                   <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                 </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T12:47:26.000Z" data-seconds="1588682846" data-datetime="6h"><span aria-hidden="true" class="qa-status-date-output">6h</span><span class="gs-u-vh">6 hours ago</span></time></span></li>
+                 </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T12:47:26.000Z" data-seconds="1588682846" data-datetime="8h"><span aria-hidden="true" class="qa-status-date-output">8h</span><span class="gs-u-vh">8 hours ago</span></time></span></li>
               <li class="nw-c-promo-meta"><a href="/news/world/middle_east" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Middle East"><span aria-hidden="true">Middle East</span></a></li>
+             </ul>
+            </div>
+           </div>
+          </div>
+          <div class="gel-layout__item nw-c-advert nw-c-advert--mobile gs-u-display-none gs-u-display-inline-block@xs gs-u-display-none@m">
+           <div id="bbccom_mpu_1_2" class="bbccom_slot gnl-mpu__ad" aria-hidden="true">
+            <div class="bbccom_advert"></div>
+           </div>
+          </div>
+          <div class="gel-layout__item nw-c-top-stories__keyline gs-u-mt+ gs-u-display-none gs-u-display-block@xs gs-u-display-none@m">
+           <div class="nw-o-keyline@xs"></div>
+          </div>
+          <div class="gel-layout__item nw-c-top-stories__secondary-item gel-1/1 gel-1/3@m gel-1/4@l nw-o-keyline nw-o-no-keyline@m gs-u-float-left nw-c-top-stories__secondary-item--3 gel-1/5@xxl">
+           <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-c-promo--flex" data-entityid="container-top-stories#4">
+            <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gel-1/2@xs gel-1/1@m">
+             <div class="gs-o-media-island">
+              <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
+               <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/97BD/production/_112154883_gettyimages-506040995.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="A man in the desert in Sudan" class="qa-lazyload-image lazyload lazyautosizes">
+              </div>
+             </div>
+            </div>
+            <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m gs-u-mt@m">
+             <div>
+              <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/science-environment-52543589"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">More than 3bn could live in extreme heat by 2070</h3></a>
+              <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">Areas such as India, Australia and Africa are predicted to be among the worst affected.</p>
+             </div>
+             <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
+              <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
+                 <svg viewbox="0 0 32 32">
+                  <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
+                  <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
+                 </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T12:55:47.000Z" data-seconds="1588683347" data-datetime="8h"><span aria-hidden="true" class="qa-status-date-output">8h</span><span class="gs-u-vh">8 hours ago</span></time></span></li>
+              <li class="nw-c-promo-meta"><a href="/news/science_and_environment" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Science &amp; Environment"><span aria-hidden="true">Science &amp; Environment</span></a></li>
+              <li class="nw-c-promo-meta"><a class="gs-o-bullet gs-o-bullet- gs-c-comment-count nw-o-link-split__anchor nw-c-comment" href="/news/science-environment-52543589/#comp-comments-button"><span><span class="gs-o-bullet__icon gel-icon gs-c-comment-count__icon nw-c-comment__icon">
+                  <svg aria-hidden="true" viewbox="0 0 32 32">
+                   <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
+                  </svg></span><span class="gs-o-bullet__text dna-comment-count___CPS__52543589 nw-o-link-split__text" data-comments-id="__CPS__52543589" id="dna-comment-count___CPS__52543589"></span><span class="gs-u-vh"> Comments</span></span></a></li>
              </ul>
             </div>
            </div>
@@ -1496,22 +1550,22 @@ if (typeof bbcdotcom !== 'undefined') {
             <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gel-1/2@xs gel-1/1@m">
              <div class="gs-o-media-island">
               <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
-               <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/15473/production/_112155178_baby.png" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Elon Musk and baby" class="qa-lazyload-image lazyload lazyautosizes">
+               <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/1760B/production/_112155759_fire.png" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Fire in Sharjah" class="qa-lazyload-image lazyload lazyautosizes">
               </div>
              </div>
             </div>
             <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m gs-u-mt@m">
              <div>
-              <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/business-52530316"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">New dad Elon Musk puts luxury homes up for sale</h3></a>
-              <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">The Tesla boss is reportedly selling homes after saying "possessions weigh you down".</p>
+              <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/world-middle-east-52553429"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Fire engulfs skyscraper in United Arab Emirates</h3></a>
+              <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">There are no immediate reports of casualties after firefighters bring the blaze under control.</p>
              </div>
              <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
               <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
                  <svg viewbox="0 0 32 32">
                   <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                   <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                 </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T12:24:56.000Z" data-seconds="1588681496" data-datetime="6h"><span aria-hidden="true" class="qa-status-date-output">6h</span><span class="gs-u-vh">6 hours ago</span></time></span></li>
-              <li class="nw-c-promo-meta"><a href="/news/business" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Business"><span aria-hidden="true">Business</span></a></li>
+                 </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T20:00:47.000Z" data-seconds="1588708847" data-datetime="1h"><span aria-hidden="true" class="qa-status-date-output">1h</span><span class="gs-u-vh">an hour ago</span></time></span></li>
+              <li class="nw-c-promo-meta"><a href="/news/world/middle_east" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Middle East"><span aria-hidden="true">Middle East</span></a></li>
              </ul>
             </div>
            </div>
@@ -1526,22 +1580,22 @@ if (typeof bbcdotcom !== 'undefined') {
             <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gel-1/2@xs gel-1/1@m">
              <div class="gs-o-media-island">
               <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
-               <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/76A7/production/_112157303_exmgu0zucaqjbqi.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="A Utah patrol officer addressing the young boy behind the wheel of the SUV" class="qa-lazyload-image lazyload lazyautosizes">
+               <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/C806/production/_112160215_437b300a-fd81-4745-9e82-1c85cc454750.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Prof Neil Ferguson" class="qa-lazyload-image lazyload lazyautosizes">
               </div>
              </div>
             </div>
             <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m gs-u-mt@m">
              <div>
-              <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/world-us-canada-52548236"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Five-year-old caught driving parents' car</h3></a>
-              <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">With $3 in his pocket, the Utah boy said he was driving to California to buy a Lamborghini.</p>
+              <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/uk-politics-52553229"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Scientist quits role after 'undermining' lockdown</h3></a>
+              <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">Prof Neil Ferguson, who advised ministers on coronavirus, says he "made an error of judgement".</p>
              </div>
              <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
               <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
                  <svg viewbox="0 0 32 32">
                   <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                   <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                 </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T15:36:50.000Z" data-seconds="1588693010" data-datetime="3h"><span aria-hidden="true" class="qa-status-date-output">3h</span><span class="gs-u-vh">3 hours ago</span></time></span></li>
-              <li class="nw-c-promo-meta"><a href="/news/world/us_and_canada" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From US &amp; Canada"><span aria-hidden="true">US &amp; Canada</span></a></li>
+                 </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T20:03:26.000Z" data-seconds="1588709006" data-datetime="1h"><span aria-hidden="true" class="qa-status-date-output">1h</span><span class="gs-u-vh">an hour ago</span></time></span></li>
+              <li class="nw-c-promo-meta"><a href="/news/politics" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From UK Politics"><span aria-hidden="true">UK Politics</span></a></li>
              </ul>
             </div>
            </div>
@@ -1553,32 +1607,53 @@ if (typeof bbcdotcom !== 'undefined') {
              <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gs-u-display-none@m gel-1/2@xs gel-1/1@m">
               <div class="gs-o-media-island">
                <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/16157/production/_112155409_ec1e1cef-610a-40b0-967e-5c93c577e8b4.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Ambulances at London Nightingale hospital" class="qa-lazyload-image lazyload lazyautosizes">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/76A7/production/_112157303_exmgu0zucaqjbqi.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="A Utah patrol officer addressing the young boy behind the wheel of the SUV" class="qa-lazyload-image lazyload lazyautosizes">
                </div>
               </div>
              </div>
              <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m">
               <div>
-               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/uk-52549860"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">UK coronavirus death toll higher than Italy's</h3></a>
-               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">The figure of 29,427 deaths is "a massive tragedy", the foreign secretary says, but steers clear of comparisons.</p>
+               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/world-us-canada-52548236"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Five-year-old caught driving parents' car</h3></a>
+               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">With $3 in his pocket, the Utah boy said he was driving to California to buy a Lamborghini.</p>
               </div>
               <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
                <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
                   <svg viewbox="0 0 32 32">
                    <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                    <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T18:32:58.000Z" data-seconds="1588703578" data-datetime="1m"><span aria-hidden="true" class="qa-status-date-output">1m</span><span class="gs-u-vh">2 minutes ago</span></time></span></li>
-               <li class="nw-c-promo-meta"><a href="/news/uk" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From UK"><span aria-hidden="true">UK</span></a></li>
-               <li class="nw-c-promo-meta"><a class="gs-o-bullet gs-o-bullet- gs-c-comment-count nw-o-link-split__anchor nw-c-comment" href="/news/uk-52549860/#comp-comments-button"><span><span class="gs-o-bullet__icon gel-icon gs-c-comment-count__icon nw-c-comment__icon">
-                   <svg aria-hidden="true" viewbox="0 0 32 32">
-                    <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
-                   </svg></span><span class="gs-o-bullet__text dna-comment-count___CPS__52549860 nw-o-link-split__text" data-comments-id="__CPS__52549860" id="dna-comment-count___CPS__52549860"></span><span class="gs-u-vh"> Comments</span></span></a></li>
+                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T15:36:50.000Z" data-seconds="1588693010" data-datetime="5h"><span aria-hidden="true" class="qa-status-date-output">5h</span><span class="gs-u-vh">5 hours ago</span></time></span></li>
+               <li class="nw-c-promo-meta"><a href="/news/world/us_and_canada" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From US &amp; Canada"><span aria-hidden="true">US &amp; Canada</span></a></li>
               </ul>
              </div>
             </div>
            </div>
            <div class="gel-layout__item nw-c-top-stories__tertiary-items gel-1/2@m gel-1/3@l gel-1/1@xxl nw-o-keyline nw-o-no-keyline@m nw-c-top-stories__tertiary-top-item--2">
             <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-u-pb-alt@m gs-c-promo--flex" data-entityid="container-top-stories#8">
+             <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gs-u-display-none@m gel-1/2@xs gel-1/1@m">
+              <div class="gs-o-media-island">
+               <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/905B/production/_111955963__100009242_gettyimages-613946528.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Virgin logo" class="qa-lazyload-image lazyload lazyautosizes">
+               </div>
+              </div>
+             </div>
+             <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m">
+              <div>
+               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/business-52542038"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Virgin Atlantic to cut 3,000 jobs and quit Gatwick</h3></a>
+               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">The airline will axe a third of its workforce in response to the "severe impact" of coronavirus.</p>
+              </div>
+              <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
+               <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
+                  <svg viewbox="0 0 32 32">
+                   <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
+                   <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
+                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T16:55:47.000Z" data-seconds="1588697747" data-datetime="4h"><span aria-hidden="true" class="qa-status-date-output">4h</span><span class="gs-u-vh">4 hours ago</span></time></span></li>
+               <li class="nw-c-promo-meta"><a href="/news/business" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Business"><span aria-hidden="true">Business</span></a></li>
+              </ul>
+             </div>
+            </div>
+           </div>
+           <div class="gel-layout__item nw-c-top-stories__tertiary-items gel-1/2@m gel-1/3@l gel-1/1@xxl nw-o-keyline nw-o-no-keyline@m nw-c-top-stories__tertiary-top-item--3">
+            <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-u-pb-alt@m gs-c-promo--flex" data-entityid="container-top-stories#9">
              <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gs-u-display-none@m gel-1/2@xs gel-1/1@m">
               <div class="gs-o-media-island">
                <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
@@ -1596,14 +1671,14 @@ if (typeof bbcdotcom !== 'undefined') {
                   <svg viewbox="0 0 32 32">
                    <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                    <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T16:01:39.000Z" data-seconds="1588694499" data-datetime="3h"><span aria-hidden="true" class="qa-status-date-output">3h</span><span class="gs-u-vh">3 hours ago</span></time></span></li>
+                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T16:01:39.000Z" data-seconds="1588694499" data-datetime="5h"><span aria-hidden="true" class="qa-status-date-output">5h</span><span class="gs-u-vh">5 hours ago</span></time></span></li>
                <li class="nw-c-promo-meta"><a href="/news/world/europe" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Europe"><span aria-hidden="true">Europe</span></a></li>
               </ul>
              </div>
             </div>
            </div>
-           <div class="gel-layout__item nw-c-top-stories__tertiary-items gel-1/2@m gel-1/3@l gel-1/1@xxl nw-o-keyline nw-o-no-keyline@m nw-c-top-stories__tertiary-top-item--3">
-            <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-u-pb-alt@m gs-c-promo--flex" data-entityid="container-top-stories#9">
+           <div class="gel-layout__item nw-c-top-stories__tertiary-items gel-1/2@m gel-1/3@l gel-1/1@xxl nw-o-keyline nw-o-no-keyline@m nw-c-top-stories__tertiary-top-item--4 gs-u-display-inline-block@s gs-u-display-none@l">
+            <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-u-pb-alt@m gs-c-promo--flex" data-entityid="container-top-stories#10">
              <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gs-u-display-none@m gel-1/2@xs gel-1/1@m">
               <div class="gs-o-media-island">
                <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
@@ -1621,33 +1696,8 @@ if (typeof bbcdotcom !== 'undefined') {
                   <svg viewbox="0 0 32 32">
                    <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                    <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T11:37:37.000Z" data-seconds="1588678657" data-datetime="7h"><span aria-hidden="true" class="qa-status-date-output">7h</span><span class="gs-u-vh">7 hours ago</span></time></span></li>
+                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T11:37:37.000Z" data-seconds="1588678657" data-datetime="9h"><span aria-hidden="true" class="qa-status-date-output">9h</span><span class="gs-u-vh">9 hours ago</span></time></span></li>
                <li class="nw-c-promo-meta"><a href="/news/world/europe" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Europe"><span aria-hidden="true">Europe</span></a></li>
-              </ul>
-             </div>
-            </div>
-           </div>
-           <div class="gel-layout__item nw-c-top-stories__tertiary-items gel-1/2@m gel-1/3@l gel-1/1@xxl nw-o-keyline nw-o-no-keyline@m nw-c-top-stories__tertiary-top-item--4 gs-u-display-inline-block@s gs-u-display-none@l">
-            <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-u-pb-alt@m gs-c-promo--flex" data-entityid="container-top-stories#10">
-             <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gs-u-display-none@m gel-1/2@xs gel-1/1@m">
-              <div class="gs-o-media-island">
-               <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/14489/production/_99518038_gettyimages-158750624.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Indian members of NGO 'Aastha' hold placards during a protest in Mumbai for better safety for women following the rape of a student in the Indian capital" class="qa-lazyload-image lazyload lazyautosizes">
-               </div>
-              </div>
-             </div>
-             <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m">
-              <div>
-               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/world-asia-india-52541298"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Indian teens' lewd Instagram group causes outrage</h3></a>
-               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">A 15-year-old boy is detained in connection with a group that shared images of underage girls.</p>
-              </div>
-              <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
-               <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
-                  <svg viewbox="0 0 32 32">
-                   <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-                   <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T10:51:57.000Z" data-seconds="1588675917" data-datetime="8h"><span aria-hidden="true" class="qa-status-date-output">8h</span><span class="gs-u-vh">8 hours ago</span></time></span></li>
-               <li class="nw-c-promo-meta"><a href="/news/world/asia/india" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From India"><span aria-hidden="true">India</span></a></li>
               </ul>
              </div>
             </div>
@@ -1657,22 +1707,22 @@ if (typeof bbcdotcom !== 'undefined') {
              <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gs-u-display-none@m gel-1/2@xs gel-1/1@m">
               <div class="gs-o-media-island">
                <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/2369/production/_112156090_061330614-1.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Filipinos light candles in symbolic solidarity outside ABS-CBN network headquarters in Quezon City, Metro Manila, Philippines, on 5 May 2020" class="qa-lazyload-image lazyload lazyautosizes">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/15473/production/_112155178_baby.png" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Elon Musk and baby" class="qa-lazyload-image lazyload lazyautosizes">
                </div>
               </div>
              </div>
              <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m">
               <div>
-               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/world-asia-52548703"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Philippines' top broadcaster ordered off air</h3></a>
-               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">ABS-CBN said it had been told it could still broadcast while waiting for its licence to be renewed.</p>
+               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/business-52530316"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">New dad Elon Musk puts luxury homes up for sale</h3></a>
+               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">The Tesla boss is reportedly selling homes after saying "possessions weigh you down".</p>
               </div>
               <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
                <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
                   <svg viewbox="0 0 32 32">
                    <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                    <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T15:44:23.000Z" data-seconds="1588693463" data-datetime="3h"><span aria-hidden="true" class="qa-status-date-output">3h</span><span class="gs-u-vh">3 hours ago</span></time></span></li>
-               <li class="nw-c-promo-meta"><a href="/news/world/asia" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Asia"><span aria-hidden="true">Asia</span></a></li>
+                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T12:24:56.000Z" data-seconds="1588681496" data-datetime="8h"><span aria-hidden="true" class="qa-status-date-output">8h</span><span class="gs-u-vh">8 hours ago</span></time></span></li>
+               <li class="nw-c-promo-meta"><a href="/news/business" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Business"><span aria-hidden="true">Business</span></a></li>
               </ul>
              </div>
             </div>
@@ -1685,28 +1735,53 @@ if (typeof bbcdotcom !== 'undefined') {
              <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gs-u-display-none@m gel-1/2@xs gel-1/1@m">
               <div class="gs-o-media-island">
                <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/14489/production/_99518038_gettyimages-158750624.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Indian members of NGO 'Aastha' hold placards during a protest in Mumbai for better safety for women following the rape of a student in the Indian capital" class="qa-lazyload-image lazyload lazyautosizes">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/8084/production/_112100923_mediaitem112100922.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Doctor on Covid ward in Paris" class="qa-lazyload-image lazyload lazyautosizes">
                </div>
               </div>
              </div>
              <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m">
               <div>
-               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/world-asia-india-52541298"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Indian teens' lewd Instagram group causes outrage</h3></a>
-               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">A 15-year-old boy is detained in connection with a group that shared images of underage girls.</p>
+               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/world-europe-52526554"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">France's first coronavirus case 'was in December'</h3></a>
+               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">The case means Covid-19 may have arrived in Europe almost a month earlier than previously thought.</p>
               </div>
               <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
                <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
                   <svg viewbox="0 0 32 32">
                    <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                    <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T10:51:57.000Z" data-seconds="1588675917" data-datetime="8h"><span aria-hidden="true" class="qa-status-date-output">8h</span><span class="gs-u-vh">8 hours ago</span></time></span></li>
-               <li class="nw-c-promo-meta"><a href="/news/world/asia/india" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From India"><span aria-hidden="true">India</span></a></li>
+                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T11:37:37.000Z" data-seconds="1588678657" data-datetime="9h"><span aria-hidden="true" class="qa-status-date-output">9h</span><span class="gs-u-vh">9 hours ago</span></time></span></li>
+               <li class="nw-c-promo-meta"><a href="/news/world/europe" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Europe"><span aria-hidden="true">Europe</span></a></li>
               </ul>
              </div>
             </div>
            </div>
            <div class="gel-layout__item nw-c-top-stories__tertiary-items gel-1/2@m gel-1/3@l gel-1/5@xxl nw-o-keyline nw-o-no-keyline@m nw-c-top-stories__tertiary-bottom-item--2">
             <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-u-pb-alt@m gs-c-promo--flex" data-entityid="container-top-stories#11">
+             <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gs-u-display-none@m gel-1/2@xs gel-1/1@m">
+              <div class="gs-o-media-island">
+               <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/15473/production/_112155178_baby.png" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Elon Musk and baby" class="qa-lazyload-image lazyload lazyautosizes">
+               </div>
+              </div>
+             </div>
+             <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m">
+              <div>
+               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/business-52530316"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">New dad Elon Musk puts luxury homes up for sale</h3></a>
+               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">The Tesla boss is reportedly selling homes after saying "possessions weigh you down".</p>
+              </div>
+              <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
+               <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
+                  <svg viewbox="0 0 32 32">
+                   <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
+                   <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
+                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T12:24:56.000Z" data-seconds="1588681496" data-datetime="8h"><span aria-hidden="true" class="qa-status-date-output">8h</span><span class="gs-u-vh">8 hours ago</span></time></span></li>
+               <li class="nw-c-promo-meta"><a href="/news/business" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Business"><span aria-hidden="true">Business</span></a></li>
+              </ul>
+             </div>
+            </div>
+           </div>
+           <div class="gel-layout__item nw-c-top-stories__tertiary-items gel-1/2@m gel-1/3@l gel-1/5@xxl nw-o-keyline nw-o-no-keyline@m nw-c-top-stories__tertiary-bottom-item--3">
+            <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-u-pb-alt@m gs-c-promo--flex" data-entityid="container-top-stories#12">
              <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gs-u-display-none@m gel-1/2@xs gel-1/1@m">
               <div class="gs-o-media-island">
                <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
@@ -1724,14 +1799,14 @@ if (typeof bbcdotcom !== 'undefined') {
                   <svg viewbox="0 0 32 32">
                    <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                    <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T15:44:23.000Z" data-seconds="1588693463" data-datetime="3h"><span aria-hidden="true" class="qa-status-date-output">3h</span><span class="gs-u-vh">3 hours ago</span></time></span></li>
+                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T15:44:23.000Z" data-seconds="1588693463" data-datetime="5h"><span aria-hidden="true" class="qa-status-date-output">5h</span><span class="gs-u-vh">5 hours ago</span></time></span></li>
                <li class="nw-c-promo-meta"><a href="/news/world/asia" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Asia"><span aria-hidden="true">Asia</span></a></li>
               </ul>
              </div>
             </div>
            </div>
-           <div class="gel-layout__item nw-c-top-stories__tertiary-items gel-1/2@m gel-1/3@l gel-1/5@xxl nw-o-keyline nw-o-no-keyline@m nw-c-top-stories__tertiary-bottom-item--3">
-            <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-u-pb-alt@m gs-c-promo--flex" data-entityid="container-top-stories#12">
+           <div class="gel-layout__item nw-c-top-stories__tertiary-items gel-1/2@m gel-1/3@l gel-1/5@xxl nw-o-keyline nw-o-no-keyline@m nw-c-top-stories__tertiary-bottom-item--4">
+            <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-u-pb-alt@m gs-c-promo--flex" data-entityid="container-top-stories#13">
              <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gs-u-display-none@m gel-1/2@xs gel-1/1@m">
               <div class="gs-o-media-island">
                <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
@@ -1749,33 +1824,8 @@ if (typeof bbcdotcom !== 'undefined') {
                   <svg viewbox="0 0 32 32">
                    <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                    <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T16:30:59.000Z" data-seconds="1588696259" data-datetime="2h"><span aria-hidden="true" class="qa-status-date-output">2h</span><span class="gs-u-vh">2 hours ago</span></time></span></li>
+                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T16:30:59.000Z" data-seconds="1588696259" data-datetime="4h"><span aria-hidden="true" class="qa-status-date-output">4h</span><span class="gs-u-vh">4 hours ago</span></time></span></li>
                <li class="nw-c-promo-meta"><a href="/news/world/latin_america" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Latin America &amp; Caribbean"><span aria-hidden="true">Latin America &amp; Caribbean</span></a></li>
-              </ul>
-             </div>
-            </div>
-           </div>
-           <div class="gel-layout__item nw-c-top-stories__tertiary-items gel-1/2@m gel-1/3@l gel-1/5@xxl nw-o-keyline nw-o-no-keyline@m nw-c-top-stories__tertiary-bottom-item--4">
-            <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m nw-u-w-auto gs-u-pb-alt@m gs-c-promo--flex" data-entityid="container-top-stories#13">
-             <div class="gs-c-promo-image gs-u-display-none gs-u-display-inline-block@xs gs-u-display-none@m gel-1/2@xs gel-1/1@m">
-              <div class="gs-o-media-island">
-               <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/D895/production/_112154455_metgala.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Florence Welch and Julia Roberts" class="qa-lazyload-image lazyload lazyautosizes">
-               </div>
-              </div>
-             </div>
-             <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m">
-              <div>
-               <a class="gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor" href="/news/entertainment-arts-52543143"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Stars dress to impress for cancelled Met Gala</h3></a>
-               <p class="gs-c-promo-summary gel-long-primer gs-u-mt nw-c-promo-summary">The fashion extravaganza was axed, but some stars revealed their outfits anyway, and fans joined in.</p>
-              </div>
-              <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
-               <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
-                  <svg viewbox="0 0 32 32">
-                   <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-                   <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T13:36:54.000Z" data-seconds="1588685814" data-datetime="5h"><span aria-hidden="true" class="qa-status-date-output">5h</span><span class="gs-u-vh">5 hours ago</span></time></span></li>
-               <li class="nw-c-promo-meta"><a href="/news/entertainment_and_arts" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Entertainment &amp; Arts"><span aria-hidden="true">Entertainment &amp; Arts</span></a></li>
               </ul>
              </div>
             </div>
@@ -1799,7 +1849,7 @@ if (typeof bbcdotcom !== 'undefined') {
                   <svg viewbox="0 0 32 32">
                    <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                    <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T12:14:23.000Z" data-seconds="1588680863" data-datetime="6h"><span aria-hidden="true" class="qa-status-date-output">6h</span><span class="gs-u-vh">6 hours ago</span></time></span></li>
+                  </svg></span><time class="gs-o-bullet__text date qa-status-date gs-u-align-middle gs-u-display-inline" datetime="2020-05-05T12:14:23.000Z" data-seconds="1588680863" data-datetime="9h"><span aria-hidden="true" class="qa-status-date-output">9h</span><span class="gs-u-vh">9 hours ago</span></time></span></li>
                <li class="nw-c-promo-meta"><a href="/news/technology" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Technology"><span aria-hidden="true">Technology</span></a></li>
               </ul>
              </div>
@@ -2108,8 +2158,8 @@ if (typeof bbcdotcom !== 'undefined') {
        </div>
       </div>
      </div> 
-     <div id="u762850949075073">
-      <div role="region" class="nw-c-most-watched gs-t-news gs-u-box-size no-touch b-pw-1280" aria-labelledby="nw-c-most-watched-heading__title" data-render-date="1588704690994">
+     <div id="u7178376168012619">
+      <div role="region" class="nw-c-most-watched gs-t-news gs-u-box-size no-touch b-pw-1280" aria-labelledby="nw-c-most-watched-heading__title" data-render-date="1588711137739">
        <div class="gel-wrap">
         <div class="gel-layout">
          <div class="gel-layout__item nw-c-slice-heading gs-u-pb+ gs-u-display-inline-block gel-1/1">
@@ -2128,17 +2178,17 @@ if (typeof bbcdotcom !== 'undefined') {
            </div></span></li>
          <li data-entityid="most-popular-watched#2" class="gel-layout__item gs-o-faux-block-link gel-1/2@m gel-1/5@xxl gs-u-mt+ gs-u-float-left@m gs-u-clear-left@m gs-u-float-none@xxl"><span class="gs-o-media"><span class="nw-c-most-watched__rank gs-o-media__img gel-canon">2</span>
            <div class="gs-o-media__body">
-            <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl@xs" href="/news/52299689"><span class="gs-c-media-indicator gel-minion nw-c-media-indicator gs-u-align-text-top gs-u-mr gs-c-media-indicator--inline"><span class="gs-c-media-indicator__icon gel-icon" data-icon="gel-icon-video"><span class="qa-offscreen gs-u-vh">Video</span>
-               <svg aria-hidden="true" viewbox="0 0 32 32">
-                <polygon points="3,32 29,16 3,0"></polygon>
-               </svg></span></span><span class="gs-c-promo-heading__title gel-pica-bold">False coronavirus claims by politicians debunked</span></a>
-           </div></span></li>
-         <li data-entityid="most-popular-watched#3" class="gel-layout__item gs-o-faux-block-link gel-1/2@m gel-1/5@xxl gs-u-mt+ gs-u-float-left@m gs-u-clear-left@m gs-u-float-none@xxl"><span class="gs-o-media"><span class="nw-c-most-watched__rank gs-o-media__img gel-canon">3</span>
-           <div class="gs-o-media__body">
             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl@xs" href="/news/uk-52545334"><span class="gs-c-media-indicator gel-minion nw-c-media-indicator gs-u-align-text-top gs-u-mr gs-c-media-indicator--inline"><span class="gs-c-media-indicator__icon gel-icon" data-icon="gel-icon-video"><span class="qa-offscreen gs-u-vh">Video</span>
                <svg aria-hidden="true" viewbox="0 0 32 32">
                 <polygon points="3,32 29,16 3,0"></polygon>
                </svg></span></span><span class="gs-c-promo-heading__title gel-pica-bold">'There was no social distancing on the flight'</span></a>
+           </div></span></li>
+         <li data-entityid="most-popular-watched#3" class="gel-layout__item gs-o-faux-block-link gel-1/2@m gel-1/5@xxl gs-u-mt+ gs-u-float-left@m gs-u-clear-left@m gs-u-float-none@xxl"><span class="gs-o-media"><span class="nw-c-most-watched__rank gs-o-media__img gel-canon">3</span>
+           <div class="gs-o-media__body">
+            <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl@xs" href="/news/52299689"><span class="gs-c-media-indicator gel-minion nw-c-media-indicator gs-u-align-text-top gs-u-mr gs-c-media-indicator--inline"><span class="gs-c-media-indicator__icon gel-icon" data-icon="gel-icon-video"><span class="qa-offscreen gs-u-vh">Video</span>
+               <svg aria-hidden="true" viewbox="0 0 32 32">
+                <polygon points="3,32 29,16 3,0"></polygon>
+               </svg></span></span><span class="gs-c-promo-heading__title gel-pica-bold">False coronavirus claims by politicians debunked</span></a>
            </div></span></li>
          <li data-entityid="most-popular-watched#4" class="gel-layout__item gs-o-faux-block-link gel-1/2@m gel-1/5@xxl gs-u-mt+"><span class="gs-o-media"><span class="nw-c-most-watched__rank gs-o-media__img gel-canon">4</span>
            <div class="gs-o-media__body">
@@ -2389,8 +2439,8 @@ if (typeof bbcdotcom !== 'undefined') {
        </div>
       </div>
      </div> 
-     <div id="u2546576999593526">
-      <div role="region" class="nw-c-most-read gs-t-news gs-u-box-size no-touch b-pw-1280" aria-labelledby="nw-c-most-read-heading__title" data-render-date="1588704741594">
+     <div id="u5876852562651038">
+      <div role="region" class="nw-c-most-read gs-t-news gs-u-box-size no-touch b-pw-1280" aria-labelledby="nw-c-most-read-heading__title" data-render-date="1588711871430">
        <div class="gel-wrap">
         <div class="gel-layout">
          <div class="gel-layout__item nw-c-slice-heading gs-u-pb+ gs-u-display-inline-block gel-1/1">
@@ -2407,15 +2457,15 @@ if (typeof bbcdotcom !== 'undefined') {
             </div></span></li>
           <li data-entityid="most-popular-read-2" class="gel-layout__item gs-o-faux-block-link gs-u-mb+ gel-1/2@m gs-u-float-left@m gs-u-clear-left@m gs-u-float-none@xxl"><span class="gs-o-media"><span class="nw-c-most-read__rank gs-o-media__img gel-canon gel-1/12@xs gel-1/8@m gel-2/12@l gel-1/10@xxl gs-u-align-center">2</span>
             <div class="gs-o-media__body">
-             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/business-52530316"><span class="gs-c-promo-heading__title gel-pica-bold">New dad Elon Musk puts luxury homes up for sale</span></a>
+             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/uk-politics-52553229"><span class="gs-c-promo-heading__title gel-pica-bold">Scientist quits role after 'undermining' lockdown</span></a>
             </div></span></li>
           <li data-entityid="most-popular-read-3" class="gel-layout__item gs-o-faux-block-link gs-u-mb+ gel-1/2@m gs-u-float-left@m gs-u-clear-left@m gs-u-float-none@xxl"><span class="gs-o-media"><span class="nw-c-most-read__rank gs-o-media__img gel-canon gel-1/12@xs gel-1/8@m gel-2/12@l gel-1/10@xxl gs-u-align-center">3</span>
             <div class="gs-o-media__body">
-             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/world-us-canada-52548236"><span class="gs-c-promo-heading__title gel-pica-bold">Five-year-old caught driving parents' car</span></a>
+             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/world-middle-east-52553429"><span class="gs-c-promo-heading__title gel-pica-bold">Fire engulfs skyscraper in United Arab Emirates</span></a>
             </div></span></li>
           <li data-entityid="most-popular-read-4" class="gel-layout__item gs-o-faux-block-link gs-u-mb+ gel-1/2@m gs-u-float-left@m gs-u-clear-left@m gs-u-float-none@xxl"><span class="gs-o-media"><span class="nw-c-most-read__rank gs-o-media__img gel-canon gel-1/12@xs gel-1/8@m gel-2/12@l gel-1/10@xxl gs-u-align-center">4</span>
             <div class="gs-o-media__body">
-             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/world-europe-52547403"><span class="gs-c-promo-heading__title gel-pica-bold">Don't rule out summer in Majorca: German official</span></a>
+             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/world-us-canada-52548236"><span class="gs-c-promo-heading__title gel-pica-bold">Five-year-old caught driving parents' car</span></a>
             </div></span></li>
           <li data-entityid="most-popular-read-5" class="gel-layout__item gs-o-faux-block-link gs-u-mb+ gel-1/2@m gs-u-float-left@m gs-u-clear-left@m gs-u-float-none@xxl"><span class="gs-o-media"><span class="nw-c-most-read__rank gs-o-media__img gel-canon gel-1/12@xs gel-1/8@m gel-2/12@l gel-1/10@xxl gs-u-align-center">5</span>
             <div class="gs-o-media__body">
@@ -2423,23 +2473,23 @@ if (typeof bbcdotcom !== 'undefined') {
             </div></span></li>
           <li data-entityid="most-popular-read-6" class="gel-layout__item gs-o-faux-block-link gs-u-mb+ gel-1/2@m"><span class="gs-o-media"><span class="nw-c-most-read__rank gs-o-media__img gel-canon gel-1/12@xs gel-1/8@m gel-2/12@l gel-1/10@xxl gs-u-align-center">6</span>
             <div class="gs-o-media__body">
-             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/business-52542038"><span class="gs-c-promo-heading__title gel-pica-bold">Virgin Atlantic to cut 3,000 jobs and quit Gatwick</span></a>
+             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/business-52530316"><span class="gs-c-promo-heading__title gel-pica-bold">New dad Elon Musk puts luxury homes up for sale</span></a>
             </div></span></li>
           <li data-entityid="most-popular-read-7" class="gel-layout__item gs-o-faux-block-link gs-u-mb+ gel-1/2@m"><span class="gs-o-media"><span class="nw-c-most-read__rank gs-o-media__img gel-canon gel-1/12@xs gel-1/8@m gel-2/12@l gel-1/10@xxl gs-u-align-center">7</span>
             <div class="gs-o-media__body">
-             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/world-europe-52537573"><span class="gs-c-promo-heading__title gel-pica-bold">Italy's desperate receive mafia offers they can't refuse</span></a>
+             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/world-europe-52547403"><span class="gs-c-promo-heading__title gel-pica-bold">Don't rule out summer in Majorca: German official</span></a>
             </div></span></li>
           <li data-entityid="most-popular-read-8" class="gel-layout__item gs-o-faux-block-link gs-u-mb+ gel-1/2@m"><span class="gs-o-media"><span class="nw-c-most-read__rank gs-o-media__img gel-canon gel-1/12@xs gel-1/8@m gel-2/12@l gel-1/10@xxl gs-u-align-center">8</span>
             <div class="gs-o-media__body">
-             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/science-environment-52543589"><span class="gs-c-promo-heading__title gel-pica-bold">More than 3bn could live in extreme heat by 2070</span></a>
+             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/business-52542038"><span class="gs-c-promo-heading__title gel-pica-bold">Virgin Atlantic to cut 3,000 jobs and quit Gatwick</span></a>
             </div></span></li>
           <li data-entityid="most-popular-read-9" class="gel-layout__item gs-o-faux-block-link gs-u-mb+ gel-1/2@m"><span class="gs-o-media"><span class="nw-c-most-read__rank gs-o-media__img gel-canon gel-1/12@xs gel-1/8@m gel-2/12@l gel-1/10@xxl gs-u-align-center">9</span>
             <div class="gs-o-media__body">
-             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/world-europe-52526554"><span class="gs-c-promo-heading__title gel-pica-bold">France's first coronavirus case 'was in December'</span></a>
+             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/science-environment-52543589"><span class="gs-c-promo-heading__title gel-pica-bold">More than 3bn could live in extreme heat by 2070</span></a>
             </div></span></li>
           <li data-entityid="most-popular-read-10" class="gel-layout__item gs-o-faux-block-link gs-u-mb+ gel-1/2@m"><span class="gs-o-media"><span class="nw-c-most-read__rank gs-o-media__img gel-canon gel-1/12@xs gel-1/8@m gel-2/12@l gel-1/10@xxl gs-u-align-center nw-c-most-read__rank--10">10</span>
             <div class="gs-o-media__body">
-             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/entertainment-arts-52543143"><span class="gs-c-promo-heading__title gel-pica-bold">Stars dress to impress for cancelled Met Gala</span></a>
+             <a class="gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs" href="/news/world-europe-52526554"><span class="gs-c-promo-heading__title gel-pica-bold">France's first coronavirus case 'was in December'</span></a>
             </div></span></li>
          </ol>
          <div class="gel-layout__item gel-1/3@l nw-c-advert gs-u-display-inline-block gs-u-float-right gs-u-pb0 gs-u-pb-alt@xs">
@@ -2607,8 +2657,8 @@ if (typeof bbcdotcom !== 'undefined') {
      <div id="u6435229908674955">
       <noscript></noscript>
      </div> 
-     <div id="u5765602511819452">
-      <div role="region" class="nw-c-sport gs-t-news gs-u-box-size no-touch b-pw-1280" aria-labelledby="nw-c-sport-heading__title" data-render-date="1588703762431">
+     <div id="u6554676520172507">
+      <div role="region" class="nw-c-sport gs-t-news gs-u-box-size no-touch b-pw-1280" aria-labelledby="nw-c-sport-heading__title" data-render-date="1588711015764">
        <div class="gel-wrap">
         <div class="gel-layout">
          <div class="gel-layout__item nw-c-slice-heading gs-u-pb+ gs-u-display-inline-block gel-1/1">
@@ -2624,27 +2674,51 @@ if (typeof bbcdotcom !== 'undefined') {
            <div class="gs-c-promo-image gs-u-mb gs-u-mb0@xs gs-u-float-right@m gel-2/3@m gel-1/1@l gs-u-pl0 gs-u-mr">
             <div class="gs-o-media-island">
              <div class="gs-o-responsive-image gs-o-responsive-image--16by9 gs-o-responsive-image--lead">
-              <img src="https://ichef.bbci.co.uk/news/320/cpsprodpb/FDD9/production/_112158946_marcusrashfordandrewrobertsongetty.jpg" sizes="(min-width: 1280px) 490px, (min-width: 900px) calc(50vw - 64px), (min-width: 600px) calc(66vw - 32px), calc(100vw - 32px)" srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/FDD9/production/_112158946_marcusrashfordandrewrobertsongetty.jpg 240w, https://ichef.bbci.co.uk/news/380/cpsprodpb/FDD9/production/_112158946_marcusrashfordandrewrobertsongetty.jpg 380w, https://ichef.bbci.co.uk/news/420/cpsprodpb/FDD9/production/_112158946_marcusrashfordandrewrobertsongetty.jpg 420w, https://ichef.bbci.co.uk/news/490/cpsprodpb/FDD9/production/_112158946_marcusrashfordandrewrobertsongetty.jpg 490w, https://ichef.bbci.co.uk/news/573/cpsprodpb/FDD9/production/_112158946_marcusrashfordandrewrobertsongetty.jpg 573w, https://ichef.bbci.co.uk/news/743/cpsprodpb/FDD9/production/_112158946_marcusrashfordandrewrobertsongetty.jpg 743w, https://ichef.bbci.co.uk/news/820/cpsprodpb/FDD9/production/_112158946_marcusrashfordandrewrobertsongetty.jpg 820w" alt="Marcus Rashford and Andrew Robertson compete for possession during Scotland v England in June 2017" class="qa-srcset-image">
+              <img src="https://ichef.bbci.co.uk/news/320/cpsprodpb/16F2B/production/_112159939_lockedgateatfootball.jpg" sizes="(min-width: 1280px) 490px, (min-width: 900px) calc(50vw - 64px), (min-width: 600px) calc(66vw - 32px), calc(100vw - 32px)" srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/16F2B/production/_112159939_lockedgateatfootball.jpg 240w, https://ichef.bbci.co.uk/news/380/cpsprodpb/16F2B/production/_112159939_lockedgateatfootball.jpg 380w, https://ichef.bbci.co.uk/news/420/cpsprodpb/16F2B/production/_112159939_lockedgateatfootball.jpg 420w, https://ichef.bbci.co.uk/news/490/cpsprodpb/16F2B/production/_112159939_lockedgateatfootball.jpg 490w, https://ichef.bbci.co.uk/news/573/cpsprodpb/16F2B/production/_112159939_lockedgateatfootball.jpg 573w, https://ichef.bbci.co.uk/news/743/cpsprodpb/16F2B/production/_112159939_lockedgateatfootball.jpg 743w, https://ichef.bbci.co.uk/news/820/cpsprodpb/16F2B/production/_112159939_lockedgateatfootball.jpg 820w" alt="locked gate at football ground" class="qa-srcset-image">
              </div>
             </div>
            </div>
            <div class="gs-c-promo-body gs-u-display-inline-block gs-u-mt@xs gs-u-mt0@m gel-1/3@m gel-1/1@l gs-u-mt gs-u-mt0@m gs-u-mt@l gs-u-pl0 gs-u-pl@m gs-u-pl0@l">
             <div>
-             <a class="gs-c-promo-heading nw-o-link-split__anchor gs-o-faux-block-link__overlay-link gel-double-pica-bold" href="/sport/football/52548531"><h3 class="gs-c-promo-heading__title gel-double-pica-bold nw-o-link-split__text">England and Scotland players make 'significant' donation to UK's National Health Service</h3></a>
+             <a class="gs-c-promo-heading nw-o-link-split__anchor gs-o-faux-block-link__overlay-link gel-double-pica-bold" href="/sport/52548523"><h3 class="gs-c-promo-heading__title gel-double-pica-bold nw-o-link-split__text">'There is no easy solution' - inside UK sport's £700m 'hole'</h3></a>
             </div>
             <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
              <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
                 <svg viewbox="0 0 32 32">
                  <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                  <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T16:06:29.000Z" data-seconds="1588694789" data-datetime="2h"><span aria-hidden="true" class="qa-status-date-output">2h</span><span class="gs-u-vh">2 hours ago</span></time></span></li>
-             <li class="nw-c-promo-meta"><a href="/sport/football" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Football"><span aria-hidden="true">Football</span></a></li>
+                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T18:42:54.000Z" data-seconds="1588704174" data-datetime="2h"><span aria-hidden="true" class="qa-status-date-output">2h</span><span class="gs-u-vh">2 hours ago</span></time></span></li>
+             <li class="nw-c-promo-meta"><a href="/sport" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Sport"><span aria-hidden="true">Sport</span></a></li>
             </ul>
            </div>
           </div>
          </div>
          <div class="gel-layout__item gel-1/3@m gel-1/4@l gel-1/5@xxl gs-u-pb+@m nw-o-keyline nw-o-no-keyline@m">
           <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m gs-u-display-flex gs-u-display-block@m" data-entityid="sport#2">
+           <div class="gs-c-promo-image gs-u-display-none gs-u-display-block@xs gel-1/2@xs gel-1/1@m">
+            <div class="gs-o-media-island">
+             <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/FDD9/production/_112158946_marcusrashfordandrewrobertsongetty.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Marcus Rashford and Andrew Robertson compete for possession during Scotland v England in June 2017" class="qa-lazyload-image lazyload lazyautosizes">
+             </div>
+            </div>
+           </div>
+           <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m gs-u-mt@m">
+            <div>
+             <a class="gs-c-promo-heading nw-o-link-split__anchor gs-o-faux-block-link__overlay-link gel-pica-bold" href="/sport/football/52548531"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">England and Scotland players make 'significant' donation to UK's National Health Service</h3></a>
+            </div>
+            <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
+             <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
+                <svg viewbox="0 0 32 32">
+                 <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
+                 <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
+                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T16:06:29.000Z" data-seconds="1588694789" data-datetime="5h"><span aria-hidden="true" class="qa-status-date-output">5h</span><span class="gs-u-vh">5 hours ago</span></time></span></li>
+             <li class="nw-c-promo-meta"><a href="/sport/football" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Football"><span aria-hidden="true">Football</span></a></li>
+            </ul>
+           </div>
+          </div>
+         </div>
+         <div class="gel-layout__item gel-1/3@m gel-1/4@l gel-1/5@xxl gs-u-pb+@m nw-o-keyline nw-o-no-keyline@m">
+          <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m gs-u-display-flex gs-u-display-block@m" data-entityid="sport#3">
            <div class="gs-c-promo-image gs-u-display-none gs-u-display-block@xs gel-1/2@xs gel-1/1@m">
             <div class="gs-o-media-island">
              <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
@@ -2661,7 +2735,7 @@ if (typeof bbcdotcom !== 'undefined') {
                 <svg viewbox="0 0 32 32">
                  <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                  <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T10:25:23.000Z" data-seconds="1588674323" data-datetime="8h"><span aria-hidden="true" class="qa-status-date-output">8h</span><span class="gs-u-vh">8 hours ago</span></time></span></li>
+                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T10:25:23.000Z" data-seconds="1588674323" data-datetime="10h"><span aria-hidden="true" class="qa-status-date-output">10h</span><span class="gs-u-vh">10 hours ago</span></time></span></li>
              <li class="nw-c-promo-meta"><a href="/sport/football" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Football"><span aria-hidden="true">Football</span></a></li>
              <li class="nw-c-promo-meta"><a href="/sport/football/52542756/#story-footer" class="gs-o-bullet gs-o-bullet- gs-c-comment-count nw-o-link-split__anchor nw-c-comment"><span class="gs-o-bullet__icon gel-icon gs-c-comment-count__icon nw-c-comment__icon">
                 <svg aria-hidden="true" viewbox="0 0 32 32">
@@ -2672,7 +2746,7 @@ if (typeof bbcdotcom !== 'undefined') {
           </div>
          </div>
          <div class="gel-layout__item gel-1/3@m gel-1/4@l gel-1/5@xxl gs-u-pb+@m nw-o-keyline nw-o-no-keyline@m">
-          <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m gs-u-display-flex gs-u-display-block@m" data-entityid="sport#3">
+          <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m gs-u-display-flex gs-u-display-block@m" data-entityid="sport#4">
            <div class="gs-c-promo-image gs-u-display-none gs-u-display-block@xs gel-1/2@xs gel-1/1@m">
             <div class="gs-o-media-island">
              <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
@@ -2689,14 +2763,14 @@ if (typeof bbcdotcom !== 'undefined') {
                 <svg viewbox="0 0 32 32">
                  <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                  <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T16:41:11.000Z" data-seconds="1588696871" data-datetime="2h"><span aria-hidden="true" class="qa-status-date-output">2h</span><span class="gs-u-vh">2 hours ago</span></time></span></li>
+                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T16:41:11.000Z" data-seconds="1588696871" data-datetime="4h"><span aria-hidden="true" class="qa-status-date-output">4h</span><span class="gs-u-vh">4 hours ago</span></time></span></li>
              <li class="nw-c-promo-meta"><a href="/sport/formula1" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Formula 1"><span aria-hidden="true">Formula 1</span></a></li>
             </ul>
            </div>
           </div>
          </div>
          <div class="gel-layout__item gel-1/3@m gel-1/4@l gel-1/5@xxl gs-u-pb+@m nw-o-keyline nw-o-no-keyline@m">
-          <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m gs-u-display-flex gs-u-display-block@m" data-entityid="sport#4">
+          <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m gs-u-display-flex gs-u-display-block@m" data-entityid="sport#5">
            <div class="gs-c-promo-image gs-u-display-none gs-u-display-block@xs gel-1/2@xs gel-1/1@m">
             <div class="gs-o-media-island">
              <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
@@ -2713,32 +2787,8 @@ if (typeof bbcdotcom !== 'undefined') {
                 <svg viewbox="0 0 32 32">
                  <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                  <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T17:43:01.000Z" data-seconds="1588700581" data-datetime="1h"><span aria-hidden="true" class="qa-status-date-output">1h</span><span class="gs-u-vh">an hour ago</span></time></span></li>
+                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T17:43:01.000Z" data-seconds="1588700581" data-datetime="3h"><span aria-hidden="true" class="qa-status-date-output">3h</span><span class="gs-u-vh">3 hours ago</span></time></span></li>
              <li class="nw-c-promo-meta"><a href="/sport/football" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Football"><span aria-hidden="true">Football</span></a></li>
-            </ul>
-           </div>
-          </div>
-         </div>
-         <div class="gel-layout__item gel-1/3@m gel-1/4@l gel-1/5@xxl gs-u-pb+@m nw-o-keyline nw-o-no-keyline@m">
-          <div class="gs-c-promo nw-c-promo gs-o-faux-block-link gs-u-pb gs-u-pb+@m nw-p-default gs-c-promo--inline gs-c-promo--stacked@m gs-u-display-flex gs-u-display-block@m" data-entityid="sport#5">
-           <div class="gs-c-promo-image gs-u-display-none gs-u-display-block@xs gel-1/2@xs gel-1/1@m">
-            <div class="gs-o-media-island">
-             <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/9F50/production/_112148704_geriantthomasandeganbernal.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Geriant Thomas and Egan Bernal" class="qa-lazyload-image lazyload lazyautosizes">
-             </div>
-            </div>
-           </div>
-           <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m gs-u-mt@m">
-            <div>
-             <a class="gs-c-promo-heading nw-o-link-split__anchor gs-o-faux-block-link__overlay-link gel-pica-bold" href="/sport/cycling/52538290"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Tour de France to start in August - with Giro and Vuelta to overlap</h3></a>
-            </div>
-            <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
-             <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
-                <svg viewbox="0 0 32 32">
-                 <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-                 <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T16:08:58.000Z" data-seconds="1588694938" data-datetime="2h"><span aria-hidden="true" class="qa-status-date-output">2h</span><span class="gs-u-vh">2 hours ago</span></time></span></li>
-             <li class="nw-c-promo-meta"><a href="/sport/cycling" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Cycling"><span aria-hidden="true">Cycling</span></a></li>
             </ul>
            </div>
           </div>
@@ -2748,21 +2798,21 @@ if (typeof bbcdotcom !== 'undefined') {
            <div class="gs-c-promo-image gs-u-display-none gs-u-display-block@xs gel-1/2@xs gel-1/1@m">
             <div class="gs-o-media-island">
              <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/E7BD/production/_112152395_whatsubject.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Sam Cane" class="qa-lazyload-image lazyload lazyautosizes">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/F682/production/_112160136_gettyimages-1212013655.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Premier League leaders Liverpool" class="qa-lazyload-image lazyload lazyautosizes">
              </div>
             </div>
            </div>
            <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m gs-u-mt@m">
             <div>
-             <a class="gs-c-promo-heading nw-o-link-split__anchor gs-o-faux-block-link__overlay-link gel-pica-bold" href="/sport/rugby-union/52544555"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Flanker Cane named All Blacks captain</h3></a>
+             <a class="gs-c-promo-heading nw-o-link-split__anchor gs-o-faux-block-link__overlay-link gel-pica-bold" href="/sport/52552667"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Return of sport would 'lift the nation', says UK government minister</h3></a>
             </div>
             <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
              <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
                 <svg viewbox="0 0 32 32">
                  <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                  <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T09:40:27.000Z" data-seconds="1588671627" data-datetime="9h"><span aria-hidden="true" class="qa-status-date-output">9h</span><span class="gs-u-vh">9 hours ago</span></time></span></li>
-             <li class="nw-c-promo-meta"><a href="/sport/rugby-union" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Rugby Union"><span aria-hidden="true">Rugby Union</span></a></li>
+                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T19:55:51.000Z" data-seconds="1588708551" data-datetime="1h"><span aria-hidden="true" class="qa-status-date-output">1h</span><span class="gs-u-vh">41 minutes ago</span></time></span></li>
+             <li class="nw-c-promo-meta"><a href="/sport" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From Sport"><span aria-hidden="true">Sport</span></a></li>
             </ul>
            </div>
           </div>
@@ -2772,21 +2822,22 @@ if (typeof bbcdotcom !== 'undefined') {
            <div class="gs-c-promo-image gs-u-display-none gs-u-display-block@xs gel-1/2@xs gel-1/1@m">
             <div class="gs-o-media-island">
              <div class="gs-o-responsive-image gs-o-responsive-image--16by9">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/14F29/production/_112110858_barca-index.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Lionel Messi and Antoine Griezmann" class="qa-lazyload-image lazyload lazyautosizes">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://ichef.bbci.co.uk/news/{width}/cpsprodpb/01FA/production/_112160500_52553604.jpg" data-widths="[240,380,420,490,573,743,820]" data-sizes="auto" alt="Aaron Ramsey and Paul Pogba" class="qa-lazyload-image lazyload lazyautosizes">
              </div>
             </div>
            </div>
            <div class="gs-c-promo-body gel-1/2@xs gel-1/1@m gs-u-mt@m">
             <div>
-             <a class="gs-c-promo-heading nw-o-link-split__anchor gs-o-faux-block-link__overlay-link gel-pica-bold" href="/sport/football/52535700"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Barca players to have Covid-19 tests before training</h3></a>
+             <a class="gs-c-promo-heading nw-o-link-split__anchor gs-o-faux-block-link__overlay-link gel-pica-bold" href="/sport/52553604"><h3 class="gs-c-promo-heading__title gel-pica-bold nw-o-link-split__text">Ramsey to Man Utd in Pogba swap deal - gossip</h3></a>
             </div>
             <ul class="gs-o-list-inline gs-o-list-inline--divided gel-brevier gs-u-mt-">
              <li class="nw-c-promo-meta"><span class="gs-c-timestamp gs-o-bullet gs-o-bullet- nw-c-timestamp"><span class="gs-o-bullet__icon gel-icon">
                 <svg viewbox="0 0 32 32">
                  <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
                  <path d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"></path>
-                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T13:22:47.000Z" data-seconds="1588684967" data-datetime="5h"><span aria-hidden="true" class="qa-status-date-output">5h</span><span class="gs-u-vh">5 hours ago</span></time></span></li>
-             <li class="nw-c-promo-meta"><a href="/sport/football/european" class="gs-c-section-link gs-c-section-link--truncate nw-c-section-link nw-o-link nw-o-link--no-visited-state" aria-label="From European Football"><span aria-hidden="true">European Football</span></a></li>
+                </svg></span><time class="gs-o-bullet__text date qa-status-date" datetime="2020-05-05T20:28:36.000Z" data-seconds="1588710516" data-datetime="8m"><span aria-hidden="true" class="qa-status-date-output">8m</span><span class="gs-u-vh">8 minutes ago</span></time></span></li>
+             <li class="nw-c-promo-meta">
+              <noscript></noscript></li>
             </ul>
            </div>
           </div>
@@ -3100,129 +3151,4 @@ if (typeof bbcdotcom !== 'undefined') {
             if (!oldIE) {
                 require(['orb/cookies'], function (bbccookies) {
                     var disabledByCookie = (parseInt(bbccookies.get('ckns_nav_promofail')) || 0) >= 3;
-                    if (!disabledByCookie) {
-                        window.bbcuser.isUKCombined().then(function(isUK) {
-                            if (isUK) {
-                                setUpLazyLoading();
-                            }
-                        });
-                    }
-                });
-            }
-        }
-
-        function setUpLazyLoading() {
-            // offsetHeight is expensive to calculate, only do it once.
-            pageLength = Math.abs(document.body.offsetHeight);
-
-            if (pageLength < getViewportHeight() + 300 || pageLength - getCurrentPosition() < PROMO_SHOW_BREAKPOINT) {
-                loadPromo();
-
-            } else {
-                window.onscroll = function () {
-                    didScroll = true;
-                };
-
-                scrollCheckTimer = setInterval(function () {
-                    if (didScroll) {
-                        hasScrolled();
-                        didScroll = false;
-                    }
-                }, 250);
-            }
-        }
-
-        function loadPromo() {
-            clearInterval(scrollCheckTimer);
-
-            require(['orb/async/_footerpromo'], function(promo) {
-                promo.init('https://navpromo.api.bbci.co.uk', '');
-            });
-        }
-
-        function getViewportHeight() {
-            return window.innerHeight;
-        }
-
-        function getCurrentPosition() {
-            return Math.abs(window.scrollY || document.body.scrollTop || document.documentElement.scrollTop);
-        }
-
-        function hasScrolled() {
-            var currentPosition = getCurrentPosition();
-            if (Math.abs(previousPosition - currentPosition) <= delta) {
-                return;
-            }
-            if (currentPosition > previousPosition) {
-                if ((pageLength - currentPosition) <= PROMO_SHOW_BREAKPOINT) {
-                    loadPromo();
-                }
-            }
-            previousPosition = currentPosition;
-        }
-
-    })</script>
-  <script type="text/javascript">/*<![CDATA[*/
-                require(['orb/nav'], function(nav) {
-                    window.bbcuser.isUKCombined().then(function(isUK) {
-                        if (isUK) {
-                            nav.loadJs('https://nav.files.bbci.co.uk/orbit/1b2e292884201dd13064a9204e177864/js/edr.min.js');
-                        }
-                    });
-                });
-            /*]]>*/</script>
-  <script type="text/javascript">require.config({
-            paths: {
-                "mybbc/templates": '//mybbc.files.bbci.co.uk/notification-ui/4.0.10/templates',
-                "mybbc/notifications": '//mybbc.files.bbci.co.uk/notification-ui/4.0.10/js'
-            }
-        });
-
-        require(['mybbc/notifications/NotificationsMain', 'idcta/idcta-1'], function (NotificationsMain, idcta) {
-
-            var loadNotifications = function (isUK) {
-                if (isUK) {
-                    window.bbcpage.loadCSS('//mybbc.files.bbci.co.uk/notification-ui/4.0.10/css/main.min.css').then(function() {
-                        NotificationsMain.run(idcta, '//mybbc.files.bbci.co.uk/notification-ui/4.0.10/');
-                    });
-                }
-            };
-            
-            window.bbcuser.isUKCombined().then(function(isUK) {
-                loadNotifications(isUK);
-            });
-        });</script>
-  <!-- BBCDOTCOM bodyLast -->
-  <div class="bbccom_display_none">
-   <script type="text/javascript">/*<![CDATA[*/ if (window.bbcdotcom && window.bbcdotcom.analytics && bbcdotcom.config && !bbcdotcom.config.isSportApp() && !bbcdotcom.config.isReel()) { bbcdotcom.checkThirdPartyFirst(bbcdotcom.analytics.page, bbcdotcom.analytics); } /*]]>*/</script>
-   <noscript>
-    <img src="//ssc.api.bbc.com/?c1=2&amp;c2=19293874&amp;ns_site=bbc&amp;name=" height="1" width="1" alt="">
-   </noscript>
-   <script type="text/javascript">/*<![CDATA[*/ if (window.bbcdotcom && bbcdotcom.currencyProviders) { bbcdotcom.checkThirdPartyFirst(bbcdotcom.currencyProviders.write, bbcdotcom.currencyProviders); } /*]]>*/</script>
-   <script type="text/javascript">/*<![CDATA[*/ if (window.bbcdotcom && bbcdotcom.currencyProviders) { bbcdotcom.checkThirdPartyFirst(bbcdotcom.currencyProviders.postWrite, bbcdotcom.currencyProviders); } /*]]>*/</script>
-   <script type="text/javascript">/*<![CDATA[*/ if (window.bbcdotcom && bbcdotcom.data && bbcdotcom.data.stats && bbcdotcom.data.stats === 1 && bbcdotcom.utils && window.location.pathname === '/') { var wwhpEdition = bbcdotcom.utils.getMetaPropertyContent('wwhp-edition'); var _sf_async_config={}; /** CONFIGURATION START **/ _sf_async_config.uid = 50924; _sf_async_config.domain = "bbc.co.uk"; _sf_async_config.title = "Homepage"+(wwhpEdition !== '' ? ' - '+wwhpEdition : ''); _sf_async_config.sections = "Homepage"+(wwhpEdition !== '' ? ', Homepage - '+wwhpEdition : ''); _sf_async_config.region = wwhpEdition; _sf_async_config.path = "/"+(wwhpEdition !== '' ? '?'+wwhpEdition : ''); /** CONFIGURATION END **/ (function(){ function loadChartbeat() { window._sf_endpt=(new Date()).getTime(); var e = document.createElement("script"); e.setAttribute("language", "javascript"); e.setAttribute("type", "text/javascript"); e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js'); document.body.appendChild(e); } var oldonload = window.onload; window.onload = (typeof window.onload != "function") ? loadChartbeat : function() { oldonload(); loadChartbeat(); }; })(); } /*]]>*/</script>
-   <script type="text/javascript">/*<![CDATA[*/ (function() { window.bbcdotcom.bodyLast = true; }()); /*]]>*/</script>
-  </div>
-  <!-- BBCDOTCOM all code in page -->
-  <script type="text/javascript">if (window.SEARCHBOX.suppress === false && window.SEARCHBOX.locale && /^en-?.*?/.test(window.SEARCHBOX.locale)) {
-    require.config({
-      paths: {
-        "search/searchbox": window.SEARCHBOX.searchboxAppStaticPrefix,
-      }
-    });
-
-    if (bbcuser && bbcuser.isUKCombined) {
-        bbcuser.isUKCombined().then(function (isUK) {
-            if (isUK) {
-                require(['search/searchbox/searchboxDrawer'], function (SearchboxDrawer) {
-                  SearchboxDrawer.run(window.SEARCHBOX);
-                });
-            }
-        });
-    }
-
-  }</script> 
-  <script type="text/javascript">window.COOKIES_STATIC_HOST = 'https://nav.files.bbci.co.uk/orbit-webmodules/0.0.2-448.45dcd56/cookie-banner/cookie-prompt/';</script>
-  <script src="https://nav.files.bbci.co.uk/orbit-webmodules/0.0.2-448.45dcd56/cookie-banner/cookie-banners.bundle.js" async></script>
-  <script type="text/javascript">require(["istats-1","orb/cookies"],function(o,t){if(t.isAllowed("s1"))try{if(!require.s.contexts._.config.paths.idcta)return void i();require(["idcta/idcta-1"],function(t){t&&"function"==typeof t.getIStatsLabels&&o.addLabels(t.getIStatsLabels()),i()},function(t){throw t})}catch(t){console&&"function"==typeof console.log&&console.log("an exception occurred while adding idcta labels to istats, invoking istats without them",t),i()}function i(){o.invoke()}});</script>
-  <script type="text/javascript">"use strict";
+       

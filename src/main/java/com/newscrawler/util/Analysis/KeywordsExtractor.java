@@ -161,13 +161,12 @@ public class KeywordsExtractor {
         List<News> newsList= newsService.findAllNews();
         for(News news:newsList){
             List<Keyword> topTenKeywords= getTopTenKeywords(getKeywordsList(news.getContent()));
-            List<Keyword> keywordList= new ArrayList<>();
             for(Keyword keyword:topTenKeywords){
                 keyword.setNews(news);
                 keywordService.saveKeyword(keyword);
                 System.out.println(news.getId()+" "+keyword.getStem()+" "+keyword.getFrequency());
             }
-            news.setKeywords(keywordList);
+            news.setKeywords(topTenKeywords);
         }
 
     }
