@@ -23,7 +23,7 @@
                         Accept : "application/json; charset=utf-8",
                         "Content-Type" : "application/json; charset=utf-8"
                     },
-                    url : '${pageContext.request.contextPath}/keyword/'+newsId,
+                    url : '${pageContext.request.contextPath}/keyword/topten/'+newsId,
                     success : function(result) {
                         google.charts.load('current', {
                             'packages' : [ 'corechart' ]
@@ -124,7 +124,7 @@
     <tr>
 <%--        <td><div id="piechart_div" style="border: 1px solid #ccc"></div></td>--%>
         <td><div id="barchart_div" style="border: 1px solid #ccc"></div></td>
-        <td><div><img id="wordcloud"></div></td>
+        <td><div style="border: 1px solid #ccc; margin-left:20px"><img id="wordcloud"></div></td>
     </tr>
 </table>
 

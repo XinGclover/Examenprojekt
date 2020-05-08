@@ -145,28 +145,19 @@ public class KeywordsExtractor {
         return sample;
     }
 
-    /**
-     * Get the first 10 elements of a list
-     * @param keywordList list of all keywords of a news
-     * @return the list of keywords with top-10 frequency
-     */
-    public List<Keyword> getTopTenKeywords(List<Keyword> keywordList){
-       return keywordList.stream().limit(10).collect(Collectors.toList());
-    }
 
     /**
      * Save the Top-10 terms of a news in database
      */
-    public void saveTopTenKeywords() {
+    public void saveKeywords() {
         List<News> newsList= newsService.findAllNews();
         for(News news:newsList){
-            List<Keyword> topTenKeywords= getTopTenKeywords(getKeywordsList(news.getContent()));
-            for(Keyword keyword:topTenKeywords){
+            List<Keyword> keywordList= getKeywordsList(news.getContent()).stream().limit(10).collect(Collectors.toList());
+            for(Keyword keyword:keywordList){
                 keyword.setNews(news);
                 keywordService.saveKeyword(keyword);
-                System.out.println(news.getId()+" "+keyword.getStem()+" "+keyword.getFrequency());
             }
-            news.setKeywords(topTenKeywords);
+            news.setKeywords(keywordList);
         }
 
     }

@@ -133,6 +133,18 @@
 			<version>1.22</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.languagetool</groupId>
+			<artifactId>language-en</artifactId>
+			<version>4.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.kennycason</groupId>
+			<artifactId>kumo-tokenizers</artifactId>
+			<version>1.22</version>
+		</dependency>
+
 
 
 	</dependencies>

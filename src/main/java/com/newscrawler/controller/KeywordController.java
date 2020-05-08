@@ -13,7 +13,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 /**
@@ -44,10 +46,10 @@ public class KeywordController {
     /**
      * Call the method to save top-10 keywords of all the news to database
      */
-    @ApiOperation(value = "Get Top-10 Keywords from News")
-    @GetMapping("/topten")
+    @ApiOperation(value = "Save Keywords of News")
+    @GetMapping("/allkeywords")
     public void getTopTenKeywords()  {
-        keywordsExtractor.saveTopTenKeywords();
+        keywordsExtractor.saveKeywords();
     }
 
     /**
@@ -56,7 +58,7 @@ public class KeywordController {
      * @return List of top-10 keywords of this news
      */
     @ApiOperation(value = "Get keywords by newsId")
-    @GetMapping("/{id}")
+    @GetMapping("/topten/{id}")
     public ResponseEntity<List<Keyword>> getTopTenKeywords(@PathVariable Long id){
         List<Keyword> keywordList;
         try{
@@ -69,6 +71,11 @@ public class KeywordController {
         return ResponseEntity.status(HttpStatus.OK).body(keywordList);
     }
 
+    /**
+     * Prepare data of words of news by news Id for word cloud displaying
+     * @param id Id of news
+     * @return
+     */
     @ApiOperation(value = "Get keywords by newsId")
     @GetMapping("/wordcloud/{id}")
     public ResponseEntity<String> getWordCloud(@PathVariable Long id){
