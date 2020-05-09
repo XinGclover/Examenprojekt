@@ -59,7 +59,6 @@ public interface BasicCrawler {
                     }
                     inputStream.close();
                     String responseMessage = stringBuilder.toString();
-                    //Jsoup parse a document from a String
                     Document document= Jsoup.parse(responseMessage);
                     return document;
                 }else {
