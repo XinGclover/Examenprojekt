@@ -23,8 +23,6 @@ import java.net.MalformedURLException;
 public interface BasicCrawler {
     void pullNews() throws IOException;
 
-
-
      /**
      * Get response with HttpClient then parse html document with Jsoup
      * @param url Url of the scraping website
@@ -69,10 +67,6 @@ public interface BasicCrawler {
                 }
             }
         } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (ClientProtocolException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
             e.printStackTrace();
         } finally {
             httpclient.close();
