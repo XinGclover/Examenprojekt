@@ -40,7 +40,7 @@ public class BBCCrawlerUtil implements BasicCrawler{
     public void pullNews() throws IOException {
         Document document= null;
         document= getHtmlFromUrl(baseUrl);
-        saveDocumentAsFile(document,"/Users/xingao/Documents/Nackademin/Examenarbete/Mythesis/MyProject/NewsCrawler/newscrawler/BBC.txt");
+        saveDocumentAsFile(document,"/Users/xingao/Documents/Nackademin/Examenarbete/Mythesis/MyProject/NewsCrawler/newscrawler/BBC.html");
         Elements hrefElements = document.select("div#site-container").select("a[href]");
 
         HashSet<String> urlSet = new HashSet<>();
