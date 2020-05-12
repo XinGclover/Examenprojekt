@@ -61,7 +61,7 @@ public class KumoWordCloud {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Dimension dimension = new Dimension(500, 500);
+        Dimension dimension = new Dimension(400, 400);
         WordCloud wordCloud = new WordCloud(dimension, CollisionMode.PIXEL_PERFECT);
         java.awt.Font font = new java.awt.Font("STSong-Light", 2, 18);
         wordCloud.setKumoFont(new KumoFont(font));

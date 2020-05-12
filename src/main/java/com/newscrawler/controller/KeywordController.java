@@ -1,8 +1,12 @@
 package com.newscrawler.controller;
 
 import com.newscrawler.entity.Keyword;
+import com.newscrawler.entity.KeywordNLP;
+import com.newscrawler.service.KeywordNLPService;
 import com.newscrawler.service.KeywordService;
+import com.newscrawler.util.Analysis.CoreNLP;
 import com.newscrawler.util.Analysis.KeywordsExtractor;
+import com.newscrawler.util.Analysis.TfIdfUtil;
 import com.newscrawler.util.Visualization.KumoWordCloud;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -29,6 +33,9 @@ public class KeywordController {
     private KeywordService keywordService;
     private KeywordsExtractor keywordsExtractor;
     private KumoWordCloud kumoWordCloud;
+    private CoreNLP coreNLP;
+    private TfIdfUtil tfIdfUtil;
+    private KeywordNLPService keywordNLPService;
 
     /**
      * Constructor
@@ -37,10 +44,13 @@ public class KeywordController {
      * @param kumoWordCloud
      */
 @Autowired
-    public KeywordController(KeywordService keywordService, KeywordsExtractor keywordsExtractor, KumoWordCloud kumoWordCloud) {
+    public KeywordController(KeywordService keywordService,KeywordNLPService keywordNLPService, KeywordsExtractor keywordsExtractor, KumoWordCloud kumoWordCloud, CoreNLP coreNLP, TfIdfUtil tfIdfUtil) {
         this.keywordService = keywordService;
+        this.keywordNLPService= keywordNLPService;
         this.keywordsExtractor = keywordsExtractor;
         this.kumoWordCloud = kumoWordCloud;
+        this.coreNLP= coreNLP;
+        this.tfIdfUtil= tfIdfUtil;
 }
 
     /**
@@ -48,8 +58,9 @@ public class KeywordController {
      */
     @ApiOperation(value = "Save Keywords of News")
     @GetMapping("/allkeywords")
-    public void getTopTenKeywords()  {
+    public ResponseEntity<String> getTopTenKeywords()  {
         keywordsExtractor.saveKeywords();
+        return ResponseEntity.status(HttpStatus.OK).body("Keywords have been saved.");
     }
 
     /**
@@ -80,6 +91,33 @@ public class KeywordController {
     @GetMapping("/wordcloud/{id}")
     public ResponseEntity<String> getWordCloud(@PathVariable Long id){
         return ResponseEntity.status(HttpStatus.OK).body(kumoWordCloud.getWordCloud(id));
+    }
+
+
+    @ApiOperation(value = "Get keywords by newsId")
+    @GetMapping("/nlp")
+    public ResponseEntity<String> testNLP(){
+        tfIdfUtil.eval();
+        return ResponseEntity.status(HttpStatus.OK).body("NLP keywords have been saved.");
+    }
+
+    /**
+     * Get top-10 NLP keywords of news by newsId
+     * @param id Id of news
+     * @return List of top-10 keywords of this news
+     */
+    @ApiOperation(value = "Get keywords by newsId")
+    @GetMapping("/nlp/{id}")
+    public ResponseEntity<List<KeywordNLP>> getTopTenNLPKeywords(@PathVariable Long id){
+        List<KeywordNLP> keywordNLPList;
+        try{
+            keywordNLPList=keywordNLPService.findAllByNewsId(id);
+        }
+        catch (Exception e){
+            LOGGER.error(e.getMessage());
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.status(HttpStatus.OK).body(keywordNLPList);
     }
 
 }

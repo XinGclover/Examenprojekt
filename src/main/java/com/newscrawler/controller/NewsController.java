@@ -56,8 +56,9 @@ public class NewsController {
      */
     @ApiOperation(value = "Scape News from BBC")
     @GetMapping("/bbc")
-    public void pullBBCNews() throws IOException {
+    public ResponseEntity<String> pullBBCNews() throws IOException {
         bbcCrawler.pullNews();
+        return ResponseEntity.status(HttpStatus.OK).body("News have been scrped.");
     }
 
     /**

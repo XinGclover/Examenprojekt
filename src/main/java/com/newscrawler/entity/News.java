@@ -41,8 +41,12 @@ public class News implements Serializable {
     @Column(columnDefinition="TEXT",nullable=true)
     private String content;
 
-    @OneToMany(mappedBy = "news" , cascade = CascadeType.PERSIST,fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "news" , cascade = CascadeType.PERSIST)
     @ToString.Exclude
     private List<Keyword> keywords;
+
+    @OneToMany(mappedBy = "news" , cascade = CascadeType.PERSIST)
+    @ToString.Exclude
+    private List<KeywordNLP> keywordsNLP;
 
 }
