@@ -84,7 +84,7 @@ public class KeywordsExtractor {
     }
 
     /**
-     * Get stem form of the term
+     * Get stem form of the term,
      * @param term the most fundamental indexed representation of text
      * @return String, which contains the stemmed form of the term
      */

@@ -13,7 +13,6 @@ import com.newscrawler.entity.News;
 import com.newscrawler.service.NewsService;
 import org.springframework.stereotype.Component;
 import static org.apache.lucene.analysis.en.EnglishAnalyzer.ENGLISH_STOP_WORDS_SET;
-
 import java.awt.*;
 import java.io.*;
 import java.util.HashSet;
@@ -61,7 +60,7 @@ public class KumoWordCloud {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Dimension dimension = new Dimension(500, 500);
+        Dimension dimension = new Dimension(400, 400);
         WordCloud wordCloud = new WordCloud(dimension, CollisionMode.PIXEL_PERFECT);
         java.awt.Font font = new java.awt.Font("STSong-Light", 2, 18);
         wordCloud.setKumoFont(new KumoFont(font));
