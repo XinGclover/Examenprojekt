@@ -14,6 +14,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Service of KeywordNLP that handles saving, finding keywords created by Stanford CoreNLP
+ */
 @Service
 public class KeywordNLPService {
     private final KeywordNLPRepository keywordNLPRepository;

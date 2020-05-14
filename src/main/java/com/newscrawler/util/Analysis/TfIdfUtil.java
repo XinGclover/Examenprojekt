@@ -3,36 +3,41 @@ package com.newscrawler.util.Analysis;
 import com.newscrawler.entity.KeywordNLP;
 import com.newscrawler.entity.News;
 import com.newscrawler.service.KeywordNLPService;
-import com.newscrawler.service.KeywordService;
 import com.newscrawler.service.NewsService;
-
 import org.springframework.stereotype.Component;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * Util to calculate TF-IDF of every lemma of words in news text and save lemmas of top-10 high score to database
+ * @see CoreNLP
+ */
 @Component
 public class TfIdfUtil {
 
     private Map<Long,List<String>> newsWordsMap;
-
     private Map<Long,Map<String,Integer>> newsTfMap;
-
     private Map<String,Double>  idfMap;
-
-
     private final NewsService newsService;
     private final CoreNLP coreNLP;
     private final KeywordNLPService keywordNLPService;
 
-    public TfIdfUtil(NewsService newsService, CoreNLP coreNLP, KeywordService keywordService, KeywordNLPService keywordNLPService) {
+    /**
+     * Constructor
+     * @param newsService object of NewsService
+     * @param coreNLP object of CoreNLP
+     * @param keywordNLPService object of KeyWordNLPService
+     */
+    public TfIdfUtil(NewsService newsService, CoreNLP coreNLP, KeywordNLPService keywordNLPService) {
         this.newsService = newsService;
         this.coreNLP = coreNLP;
         this.keywordNLPService = keywordNLPService;
-
     }
 
 
+    /**
+     * Implement all steps of calculating, sort and save lemma with top-10 high score to database
+     */
     public void eval(){
         this.splitWord();
         this.calTf();
@@ -56,9 +61,11 @@ public class TfIdfUtil {
     }
 
 
-
+    /**
+     * Create Map of news and list of lemmas, newsId as key, lemma list as value
+     */
     private  void splitWord(){
-        newsWordsMap = new HashMap<Long,List<String>>();
+        newsWordsMap = new HashMap<>();
         List<News> allnewsList= newsService.findAllNews();
         for(News news: allnewsList){
             newsWordsMap.put(news.getId(),coreNLP.nlpText(news.getId()));
@@ -67,8 +74,7 @@ public class TfIdfUtil {
     }
 
     /**
-     * Calculate TF of every news
-     *
+     * Calculate TF of every words of all news, create a Map, newsId as key,Map of lemma and frequency as value
      */
     private void calTf() {
         newsTfMap = new HashMap<>();
@@ -86,30 +92,31 @@ public class TfIdfUtil {
     }
 
     /**
-     * Calculate IDF of every word of all news
-     *
+     * Calculate IDF of every word of all news, create a Map, lemma as key, IDF value as value
      */
     private void calIdf() {
         int documentCount = newsWordsMap.size();
-        idfMap = new HashMap<String,Double>();
-
-        Map<String,Integer> wordAppearendMap = new HashMap<String,Integer>();
+        idfMap = new HashMap<>();
+        Map<String,Integer> wordAppearMap = new HashMap<>();
         for(Map<String,Integer> countMap : newsTfMap.values()  ) {
             for(String word : countMap.keySet()) {
-                if(wordAppearendMap.containsKey(word)) {
-                    wordAppearendMap.put(word, wordAppearendMap.get(word)+1);
+                if(wordAppearMap.containsKey(word)) {
+                    wordAppearMap.put(word, wordAppearMap.get(word)+1);
                 }else {
-                    wordAppearendMap.put(word, 1);
+                    wordAppearMap.put(word, 1);
                 }
             }
         }
-
-        for(String word : wordAppearendMap.keySet()) {
-            double idf = Math.log( documentCount  / (wordAppearendMap.get(word)+1)  );
+        for(String word : wordAppearMap.keySet()) {
+            double idf = Math.log( documentCount  / (wordAppearMap.get(word)+1)  );
             idfMap.put(word, idf);
         }
     }
 
+    /**
+     * Calculate TF-IDF of every word of all news, create Map, newsId as key, Map of lemma and TF-IDF value as value.
+     * @return Map of newId and lemma and TF-IDF value
+     */
     private Map<Long,Map<String,Double>> calTfIdf() {
         Map<Long,Map<String,Double>> tfidfRes = new HashMap<>();
         for(Map.Entry<Long,Map<String,Integer>> entry : newsTfMap.entrySet() ) {

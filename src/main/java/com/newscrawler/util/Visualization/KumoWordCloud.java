@@ -13,7 +13,6 @@ import com.newscrawler.entity.News;
 import com.newscrawler.service.NewsService;
 import org.springframework.stereotype.Component;
 import static org.apache.lucene.analysis.en.EnglishAnalyzer.ENGLISH_STOP_WORDS_SET;
-
 import java.awt.*;
 import java.io.*;
 import java.util.HashSet;

@@ -9,11 +9,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Date;
 import java.util.HashSet;
@@ -34,7 +32,7 @@ public class BBCCrawlerUtil implements BasicCrawler{
 
     /**
      * Fetching data from requied elements and call newsservice to save data as entity to database
-     * @throws MalformedURLException
+     * @throws IOException
      */
     @Override
     public void pullNews() throws IOException {

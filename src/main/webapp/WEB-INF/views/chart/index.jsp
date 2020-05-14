@@ -95,7 +95,6 @@
                             },
                             url : '${pageContext.request.contextPath}/keyword/wordcloud/'+newsId,
                             success :function(data) {
-                                console.log(data);
                                 $('#wordcloud').attr("src","data:image/png;base64,"+data);
                             }
                         });
@@ -170,6 +169,7 @@
                     url : '${pageContext.request.contextPath}/news/bbc',
                     success :function(response) {
                         $('#statusMessage').html(response);
+                        console.log("response=====",response);
                         saveKeywords();
                         saveNLPKeywords();
 
