@@ -41,7 +41,7 @@ public class CoreNLP {
     public List<String> nlpText(Long newsId) {
         List<String> wordList = new ArrayList<>();
         Properties props = new Properties();
-        props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+        props.put("annotators", "tokenize, ssplit, pos, lemma");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
        News news= new News();

@@ -170,12 +170,10 @@
                     success :function(response) {
                         $('#statusMessage').html(response);
                         console.log("response=====",response);
-                        saveKeywords();
-                        saveNLPKeywords();
-
                     }
                 });
             });
+        }
 
             function saveKeywords() {
                 $(document).ready(function() {
@@ -188,7 +186,7 @@
                         url : '${pageContext.request.contextPath}/keyword/allkeywords',
                         success :function(response) {
                             $('#statusMessage').html(response);
-
+                            console.log("keyword",response);
                         }
                     });
                 });
@@ -205,13 +203,12 @@
                         url : '${pageContext.request.contextPath}/keyword/nlp',
                         success :function(response) {
                             $('#statusMessage').html(response);
-
+                            console.log("NLP",response);
                         }
                     });
                 });
             }
 
-        }
 
 
     </script>
@@ -219,6 +216,8 @@
 </head>
 <br>
 <button onclick="startScrpe()">Start Scrape</button>
+<button onclick="saveKeywords()">Keywords</button>
+<button onclick="saveNLPKeywords()">NLP Keywords</button>
 <br><br>
 <h3 id="statusMessage"></h3>
 <label>Select a news:</label>
