@@ -48,8 +48,8 @@ public class NewsController {
     @ApiOperation(value = "Scape News from SVT")
     @GetMapping("/svt")
     public ResponseEntity<String> pullSVTNews() throws MalformedURLException {
-        svtCrawler.pullNews();
-        return ResponseEntity.status(HttpStatus.OK).body("News on SVT have been scrped.");
+        int n= svtCrawler.pullNews();
+        return ResponseEntity.status(HttpStatus.OK).body(n+ " items of News on BBC have been scrped.");
     }
 
 
@@ -61,8 +61,8 @@ public class NewsController {
     @ApiOperation(value = "Scape News from BBC and save to database")
     @GetMapping("/bbc")
     public ResponseEntity<String> pullBBCNews() throws IOException {
-        bbcCrawler.pullNews();
-        return ResponseEntity.status(HttpStatus.OK).body("News on BBC have been scrped.");
+        int n= bbcCrawler.pullNews();
+        return ResponseEntity.status(HttpStatus.OK).body(n+ " items of News on BBC have been scrped.");
     }
 
     /**
