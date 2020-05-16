@@ -36,5 +36,6 @@ class CoreNLPTest {
         assertEquals("Barack",lemmaList.get(0));
         assertEquals("Obama",lemmaList.get(1));
         assertEquals("be",lemmaList.get(2));
+        assertEquals("bear",lemmaList.get(3));
     }
 }
