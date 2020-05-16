@@ -16,5 +16,5 @@ Application can connect two major portal news website and scrap from base URL ww
 * Implement **START SCRAPE -> KEYWORDS -> NLP KETWORDS**
 * Input NewsID(<= the quantity of news scrapde showed above)
 * Get results
-
-
+![Image of result]
+(https://github.com/XinGclover/Examenprojekt/Screenshot 2020-05-16 at 11.11.46.png)
