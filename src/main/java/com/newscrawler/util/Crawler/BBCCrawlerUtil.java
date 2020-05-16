@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.concurrent.atomic.AtomicInteger;
 
 
 /**
@@ -28,19 +29,18 @@ public class BBCCrawlerUtil implements BasicCrawler{
     private NewsService newsService;
     private String baseUrl= "https://www.bbc.com/news";
     private static final Logger LOGGER = LoggerFactory.getLogger(BBCCrawlerUtil.class);
-
+    private int n=0;
 
     /**
      * Fetching data from requied elements and call newsservice to save data as entity to database
      * @throws IOException
      */
     @Override
-    public void pullNews() throws IOException {
+    public int pullNews() throws IOException {
         Document document= null;
         document= getHtmlFromUrl(baseUrl);
         saveDocumentAsFile(document,"/Users/xingao/Documents/Nackademin/Examenarbete/Mythesis/MyProject/NewsCrawler/newscrawler/BBC.html");
         Elements hrefElements = document.select("div#site-container").select("a[href]");
-
         HashSet<String> urlSet = new HashSet<>();
 
         for(Element e :hrefElements ){
@@ -78,6 +78,7 @@ public class BBCCrawlerUtil implements BasicCrawler{
                     news.setCreateDate(new Date());
                     news.setNewsDate(newsTime);
                     newsService.saveNews(news);
+                    n++;
                 }
                 else {
                     LOGGER.error("There is no article!");
@@ -86,6 +87,7 @@ public class BBCCrawlerUtil implements BasicCrawler{
                 e.printStackTrace();
             }
         });
+        return n;
     }
 
 

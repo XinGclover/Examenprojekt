@@ -21,14 +21,14 @@ public class SVTCrawlerUtil implements BasicCrawler{
     @Autowired
     private NewsService newsService;
     private String baseUrl= "https://www.svt.se";
-
+    private int n=0;
     /**
      * Fetching data from requied elements and call newsservice to save data as entity to database
      * @throws MalformedURLException Thrown to indicate that a malformed URL has occurred. Either no legal protocol could be found in a specification string or the string could not be parsed
      * @see BasicCrawler
      */
     @Override
-    public void pullNews() throws MalformedURLException {
+    public int pullNews() throws MalformedURLException {
         Document document= null;
         try{
             document= getHtmlFromUrl(baseUrl);
@@ -83,6 +83,7 @@ public class SVTCrawlerUtil implements BasicCrawler{
                     news.setCreateDate(new Date());
                     news.setNewsDate(newsTime);
                     newsService.saveNews(news);
+                    n++;
                 }
                 else {
                     System.out.println("There is no article!");
@@ -90,7 +91,7 @@ public class SVTCrawlerUtil implements BasicCrawler{
             }catch (Exception e){
                 e.printStackTrace();
             }
-        });
+        });return n;
     }
 
 

@@ -5,6 +5,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Google Chart in JSP-Servlet</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script
             src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
@@ -163,29 +169,32 @@
                 $.ajax({
                     type : 'GET',
                     headers : {
-                        Accept : "application/json; charset=utf-8",
-                        "Content-Type" : "application/json; charset=utf-8"
+                        Accept : "text/plain;charset=UTF-8",
+                        "Content-Type" : "text/plain;charset=UTF-8"
                     },
                     url : '${pageContext.request.contextPath}/news/bbc',
+                    beforeSend:beforeSend,
+                    complete:complete,
                     success :function(response) {
-                        $('#statusMessage').html(response);
-                        console.log("response=====",response);
+                        $('#scrapeMessage').html(response);
                     }
                 });
             });
         }
 
-            function saveKeywords() {
+        function saveKeywords() {
                 $(document).ready(function() {
                     $.ajax({
                         type : 'GET',
                         headers : {
-                            Accept : "application/json; charset=utf-8",
-                            "Content-Type" : "application/json; charset=utf-8"
+                            Accept : "text/plain;charset=UTF-8",
+                            "Content-Type" : "text/plain;charset=UTF-8"
                         },
                         url : '${pageContext.request.contextPath}/keyword/allkeywords',
+                        beforeSend:beforeSend,
+                        complete:complete,
                         success :function(response) {
-                            $('#statusMessage').html(response);
+                            $('#keywordMessage').html(response);
                             console.log("keyword",response);
                         }
                     });
@@ -197,44 +206,61 @@
                     $.ajax({
                         type : 'GET',
                         headers : {
-                            Accept : "application/json; charset=utf-8",
-                            "Content-Type" : "application/json; charset=utf-8"
+                            Accept : "text/plain;charset=UTF-8",
+                            "Content-Type" : "text/plain;charset=UTF-8"
                         },
                         url : '${pageContext.request.contextPath}/keyword/nlp',
+                        beforeSend:beforeSend,
+                        complete:complete,
                         success :function(response) {
-                            $('#statusMessage').html(response);
-                            console.log("NLP",response);
+                            $('#NLPMessage').html(response);
                         }
                     });
                 });
             }
+        function beforeSend(XMLHttpRequest){
+            $("#showResult").append("<div><img src='https://media.giphy.com/media/52qtwCtj9OLTi/giphy.gif' width='200'/><div>");
+        }
+        function complete(XMLHttpRequest, textStatus){
+            $("#showResult").html("");
+        }
 
 
 
     </script>
 
 </head>
-<br>
-<button onclick="startScrpe()">Start Scrape</button>
-<button onclick="saveKeywords()">Keywords</button>
-<button onclick="saveNLPKeywords()">NLP Keywords</button>
-<br><br>
-<h3 id="statusMessage"></h3>
-<label>Select a news:</label>
-<input type="text" id="newsId" >
-<button onclick="searchNews()">Search</button>
-<br><br>
-<h1 id="newsTitle"></h1>
-<table class="columns">
-    <tr style="border: 1px solid #ccc">
+<body>
+<div class="container">
 
-        <td><div id="barchart_div" style="border: 1px solid #ccc"></div></td>
-        <td><div id="nlpbarchart_div" style="border: 1px solid #ccc"></div></td>
+
+<a class="waves-effect waves-light btn" onclick="startScrpe()">Start Scrape</a>
+<a class="waves-effect waves-light btn" onclick="saveKeywords()">Keywords</a>
+<a class="waves-effect waves-light btn" onclick="saveNLPKeywords()">NLP Keywords</a>
+
+    <div id="showResult"></div>
+    <ul class="collection">
+<li class="collection-item" id="scrapeMessage" style="color: #0088CC"></li>
+<li class="collection-item" id="keywordMessage" style="color: #0088CC"></li>
+<li class="collection-item" id="NLPMessage" style="color: #0088CC"></li>
+    </ul>
+
+<h7>Select a news:</h7>
+<input type="text" id="newsId" >
+    <a class="waves-effect waves-light btn" onclick="searchNews()">Search</a>
+
+
+<h4 id="newsTitle"></h4>
+<table class="highlight">
+    <tr>
+
+        <td><div id="barchart_div" ></div></td>
+        <td><div id="nlpbarchart_div" ></div></td>
 
     </tr>
-    <div style="border: 1px solid #ccc"><img id="wordcloud"></div>
+    <div ><img id="wordcloud"></div>
 </table>
-
+</div>
 </body>
 </html>
 
