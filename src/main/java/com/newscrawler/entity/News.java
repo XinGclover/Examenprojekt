@@ -4,9 +4,13 @@ import javax.persistence.*;
 import java.io.Serializable;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
-
+import java.util.List;
 import lombok.*;
 
+
+/**
+ * News entity
+ */
 @Entity
 @Getter
 @Setter
@@ -21,24 +25,29 @@ public class News implements Serializable {
     @NonNull
     private String url;
 
-    @NotNull
-    @NonNull
     private String title;
-
-    private String image;
 
     @NotNull
     @NonNull
     private Date createDate;
 
-    private Date newsDate;
+    private String newsDate;
 
     @NotNull
     @NonNull
     private String source;
 
-    @NotNull
-    @NonNull
+    @Lob
+    @Basic(fetch=FetchType.LAZY)
+    @Column(columnDefinition="TEXT",nullable=true)
     private String content;
+
+    @OneToMany(mappedBy = "news" , cascade = CascadeType.PERSIST)
+    @ToString.Exclude
+    private List<Keyword> keywords;
+
+    @OneToMany(mappedBy = "news" , cascade = CascadeType.PERSIST)
+    @ToString.Exclude
+    private List<KeywordNLP> keywordsNLP;
 
 }
