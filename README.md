@@ -17,5 +17,4 @@ Application can connect two major portal news website and scrap from base URL ww
 * Input NewsID(<= the quantity of news scrapde showed above)
 * Get results
 
-![Image of result]
-(result.png raw=true)
+![Image of result](result.png)
