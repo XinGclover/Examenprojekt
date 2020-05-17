@@ -61,7 +61,6 @@ public class CoreNLP {
         for (CoreMap sentence : sentences) {
             for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
                 String lemma = token.get(LemmaAnnotation.class);
-                System.out.println(lemma);
                 if(!convertCharSetToCollection().contains(lemma)){
                     wordList.add(lemma);
                 }
