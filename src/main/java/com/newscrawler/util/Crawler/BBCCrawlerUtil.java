@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Date;
 import java.util.HashSet;
-import java.util.concurrent.atomic.AtomicInteger;
+
 
 
 /**
@@ -30,31 +30,40 @@ public class BBCCrawlerUtil implements BasicCrawler{
     private String baseUrl= "https://www.bbc.com/news";
     private static final Logger LOGGER = LoggerFactory.getLogger(BBCCrawlerUtil.class);
     private int n=0;
+    private HashSet<String> urlSet;
 
     /**
-     * Fetching data from requied elements and call newsservice to save data as entity to database
+     * Get Set of URL containing "news" and change relative URLs to absolute URLs
      * @throws IOException
      */
     @Override
-    public int pullNews() throws IOException {
-        Document document= null;
-        document= getHtmlFromUrl(baseUrl);
-        saveDocumentAsFile(document,"/Users/xingao/Documents/Nackademin/Examenarbete/Mythesis/MyProject/NewsCrawler/newscrawler/BBC.html");
+    public void pullNews() throws IOException {
+        Document document = null;
+        document = getHtmlFromUrl(baseUrl);
+        saveDocumentAsFile(document, "/Users/xingao/Documents/Nackademin/Examenarbete/Mythesis/MyProject/NewsCrawler/newscrawler/BBC.html");
         Elements hrefElements = document.select("div#site-container").select("a[href]");
-        HashSet<String> urlSet = new HashSet<>();
+        urlSet = new HashSet<>();
 
-        for(Element e :hrefElements ){
+        for (Element e : hrefElements) {
             String url = e.attr("href");
-            if(url.contains("news")&&url.matches(".*\\d+.*")){
-                if(url.contains("http")){
+            if (url.contains("news") && url.matches(".*\\d+.*")) {
+                if (url.contains("http")) {
                     urlSet.add(url);
-                }else{
-                    URL absoluteUrl= new URL(new URL("https://www.bbc.com"),url);
+                } else {
+                    URL absoluteUrl = new URL(new URL("https://www.bbc.com"), url);
                     urlSet.add(absoluteUrl.toString());
                 }
             }
         }
+    }
 
+    /**
+     * Loop Set of URLS of news and fetch data from requied elements and call newsservice to save data as entity to database
+     * @return the quantity of news saved
+     * @throws IOException
+     */
+    public int saveBBCNews() throws IOException {
+        pullNews();
         urlSet.forEach(url->{
             News news= new News();
             Document newsHtml = null;
