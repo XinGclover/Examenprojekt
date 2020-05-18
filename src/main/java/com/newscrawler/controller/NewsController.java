@@ -43,13 +43,13 @@ public class NewsController {
     /**
      * Scape news from SVT and save to database
      * @return message String indicates process finish
-     * @throws MalformedURLException Thrown to indicate that a malformed URL has occurred. Either no legal protocol could be found in a specification string or the string could not be parsed
+     * @throws IOException
      */
     @ApiOperation(value = "Scape News from SVT")
     @GetMapping("/svt")
-    public ResponseEntity<String> pullSVTNews() throws MalformedURLException {
-        int n= svtCrawler.pullNews();
-        return ResponseEntity.status(HttpStatus.OK).body(n+ " items of News on BBC have been scrped.");
+    public ResponseEntity<String> pullSVTNews() throws IOException {
+        int n= svtCrawler.saveSVTNews();
+        return ResponseEntity.status(HttpStatus.OK).body(n+ " items of News on SVT have been scraped.");
     }
 
 
@@ -61,8 +61,8 @@ public class NewsController {
     @ApiOperation(value = "Scape News from BBC and save to database")
     @GetMapping("/bbc")
     public ResponseEntity<String> pullBBCNews() throws IOException {
-        int n= bbcCrawler.pullNews();
-        return ResponseEntity.status(HttpStatus.OK).body(n+ " items of News on BBC have been scrped.");
+        int n= bbcCrawler.saveBBCNews();
+        return ResponseEntity.status(HttpStatus.OK).body(n+ " items of News on BBC have been scraped.");
     }
 
     /**

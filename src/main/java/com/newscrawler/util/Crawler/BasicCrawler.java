@@ -21,7 +21,7 @@ import java.net.MalformedURLException;
  *
  */
 public interface BasicCrawler {
-    int pullNews() throws IOException;
+    void pullNews() throws IOException;
 
      /**
      * Get response with HttpClient then parse html document with Jsoup

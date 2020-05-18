@@ -7,13 +7,13 @@ import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import java.io.*;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Date;
 import java.util.HashSet;
 
 /**
- * Specialized scraping for SVT, obtain data from requied elements on BBC
+ * Specialized scraping for SVT, obtain data from requied elements on SVT
+ * Use Jsoup to select necessary elements from document and fetch text or attribute from those elements.
  * @see BasicCrawler
  */
 @Component
@@ -22,24 +22,23 @@ public class SVTCrawlerUtil implements BasicCrawler{
     private NewsService newsService;
     private String baseUrl= "https://www.svt.se";
     private int n=0;
+    private HashSet<String> urlSet;
+
+
     /**
-     * Fetching data from requied elements and call newsservice to save data as entity to database
-     * @throws MalformedURLException Thrown to indicate that a malformed URL has occurred. Either no legal protocol could be found in a specification string or the string could not be parsed
-     * @see BasicCrawler
+     * Get Set of URL containing "news" and change relative URLs to absolute URLs
+     * @throws IOException
      */
     @Override
-    public int pullNews() throws MalformedURLException {
-        Document document= null;
-        try{
-            document= getHtmlFromUrl(baseUrl);
+    public void pullNews() throws IOException {
+        Document document = null;
+        try {
+            document = getHtmlFromUrl(baseUrl);
             BufferedWriter writer = null;
-            try
-            {
-                writer = new BufferedWriter( new FileWriter("/Users/xingao/Documents/Nackademin/Examenarbete/Mythesis/MyProject/NewsCrawler/newscrawler/SVT.txt"));
+            try {
+                writer = new BufferedWriter(new FileWriter("/Users/xingao/Documents/Nackademin/Examenarbete/Mythesis/MyProject/NewsCrawler/newscrawler/SVT.txt"));
                 writer.write(document.toString());
-            }
-            catch ( IOException e)
-            {
+            } catch (IOException e) {
                 System.out.println("Can not save to file!");
             }
         } catch (IOException e) {
@@ -48,18 +47,27 @@ public class SVTCrawlerUtil implements BasicCrawler{
         Elements hrefElements = document.select("main.nyh_body")
                 .select("li")
                 .select("a[href]");
-        HashSet<String> urlSet = new HashSet<>();
+      urlSet = new HashSet<>();
 
-        for(Element e :hrefElements ){
+        for (Element e : hrefElements) {
             String url = e.attr("href");
-            if(url.contains("http")){
-                urlSet.add(url);
-            }else{
-                URL absoluteUrl= new URL(new URL(baseUrl),url);
-                urlSet.add(absoluteUrl.toString());
+            if (url.contains("nyheter") && url.matches(".*\\d+.*")) {
+                if (url.contains("http")) {
+                    urlSet.add(url);
+                } else {
+                    URL absoluteUrl = new URL(new URL("https://www.svt.se"), url);
+                    urlSet.add(absoluteUrl.toString());
+                }
             }
         }
+    }
 
+    /**
+     * Loop Set of URLS of news and fetch data from requied elements and call newsservice to save data as entity to database
+     * @return the quantity of news saved
+     */
+    public int saveSVTNews() throws IOException {
+        pullNews();
         urlSet.forEach(url->{
             News news= new News();
             Document newsHtml = null;
